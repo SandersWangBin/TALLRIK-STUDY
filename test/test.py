@@ -5,9 +5,9 @@ from Events import Events
 
 e = Events()
 e.register('../userDesign/hello.py:printHello')
-e.register('../userDesign/hello.py:Hello.printText')
+e.register('../userDesign/hello.py:Hello#0.printText')
 
 print e
 
-e.events['../userDesign/hello.py']['printHello']['$INSTANCE']()
-e.events['../userDesign/hello.py']['Hello']['printText']['$INSTANCE']('ok')
+e.fire('../userDesign/hello.py:printHello')
+e.fire('../userDesign/hello.py:Hello#0.printText', 'ok')
