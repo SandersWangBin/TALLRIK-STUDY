@@ -15,3 +15,6 @@ class Stack(object):
 
     def isEmpty(self):
         return len(self._storage) == 0
+
+    def __len__(self):
+        return len(self._storage)

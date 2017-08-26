@@ -105,4 +105,3 @@ class Events(object):
 
     def __str__(self):
         return 'self.events: ' + str(self.events)
-    
