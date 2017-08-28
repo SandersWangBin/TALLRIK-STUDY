@@ -17,8 +17,29 @@ e.fire('../userDesign/hello.py:Hello#0.printText', 123, 'ok')
 
 
 from Parser import *
-root = genBinTree(genRpnList('<a>; ( (<b>,<c>,<d>*[0:]) | <e> ; <f>*[5] )'))
+root = genBinTree(genRpnList('<a>; ( (<b>,<c>,<d>*[0:]) | (<e> ; <f>*[5]) )'))
 print
 printTreeUpDown(root)
+mergeLoopTreeDownUp(root)
+mergeSameOpTreeDownUp(root)
 print
-printTreeDownUp(root)
+printTreeUpDown(root)
+
+
+def verifyLoop(loopStr, loopStr2):
+    from Tree import Loop
+    l = Loop(loopStr)
+    print loopStr, str(l)
+    print ' * ', loopStr2, 
+    print '=>', str(l.times(loopStr2))
+
+verifyLoop('[]', '[]')
+verifyLoop('[5]', '[2]')
+verifyLoop('[3:5]', '[1:4]')
+verifyLoop('[:5]', '[:2]')
+verifyLoop('[3:]', '[4:]')
+verifyLoop('[:]', '[:]')
+verifyLoop('[0:5]', '[2]')
+
+#print
+#printTreeDownUp(root)
