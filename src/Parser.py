@@ -100,6 +100,7 @@ def genBinTree(rpnList):
             node = _genTNode(e)
             r = rpnStack.pop()
             r.parent = node
+            r.childRank = 1
             l = rpnStack.pop()
             l.parent = node
             node.children.append(l)
@@ -123,3 +124,34 @@ def printTreeUpDown(root):
 
 def printTreeDownUp(root):
     _handleTreeDownUp(root, _printNode)
+
+def _mergeLoopNode(node):
+    if node.type == TYPE_OP and node.item == SYMBOL_LOOP:
+        node.children[0].loop.times(node.children[1].item)
+        node.parent.children[node.childRank] = node.children[0]
+        node.children[0].parent = node.parent
+        node.children[1].parent = None
+        for rank in range(0,len(node.parent.children)):
+            node.parent.children[rank].childRank = rank
+        node.parent = None
+        del node.children
+
+def mergeLoopTreeDownUp(root):
+    _handleTreeDownUp(root, _mergeLoopNode)
+
+def _mergeSameOpNode(node):
+    if node.type == TYPE_OP and node.parent != None:
+        if node.item == node.parent.item:
+            if node.childRank == 0:
+                node.parent.children = node.children + node.parent.children[1:]
+            else:
+                node.parent.children = node.parent.children[:node.childRank] + \
+                node.children + node.parent.children[node.childRank+1:]
+            for child in node.children: child.parent = node.parent
+            for rank in range(0,len(node.parent.children)):
+                node.parent.children[rank].childRank = rank
+            node.parent = None
+            del node.children
+
+def mergeSameOpTreeDownUp(root):
+    _handleTreeDownUp(root, _mergeSameOpNode)
