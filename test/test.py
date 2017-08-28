@@ -26,12 +26,15 @@ print
 printTreeUpDown(root)
 
 
-def verifyLoop(loopStr, loopStr2):
+def verifyLoop(loopStr, loopStr2, fires=1):
     from Tree import Loop
     l = Loop(loopStr)
     print loopStr, str(l)
     print ' * ', loopStr2, 
     print '=>', str(l.times(loopStr2))
+    print 'fire: ' + str(fires) + ' ', 
+    for f in range(fires): l.fire()
+    print l
 
 verifyLoop('[]', '[]')
 verifyLoop('[5]', '[2]')
