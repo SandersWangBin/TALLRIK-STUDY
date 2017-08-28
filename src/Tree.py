@@ -68,6 +68,7 @@ class Loop:
         if self.max == Loop.VALUE_MAX_INT or loopMax == Loop.VALUE_MAX_INT:
             self.max = Loop.VALUE_MAX_INT
         else: self.max = self.max * loopMax
+        self.loopStatus, self.fireStatus = self._updateStatus(self.fireCount)
         return self
 
     def __str__(self):
