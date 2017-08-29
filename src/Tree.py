@@ -19,6 +19,8 @@ class Loop:
     VALUE_MAX_INT = sys.maxint
 
     def __init__(self, loopStr='[1]'):
+        self.loopStrList = list()
+        self.loopStrList.append(loopStr)
         self.min ,self.max = self._parserLoopStr(loopStr)
         self.fireCount = 0
         self.loopStatus, self.fireStatus = self._updateStatus(self.fireCount)
@@ -62,15 +64,49 @@ class Loop:
         self.fireCount += 1
         self.loopStatus, self.fireStatus = self._updateStatus(self.fireCount)
 
-    def times(self, loopStr):
-        loopMin, loopMax = self._parserLoopStr(loopStr)
+    def _times(self, loopMin, loopMax):
         self.min = self.min * loopMin
         if self.max == Loop.VALUE_MAX_INT or loopMax == Loop.VALUE_MAX_INT:
             self.max = Loop.VALUE_MAX_INT
         else: self.max = self.max * loopMax
+
+    def timesLoopStr(self, loopStr):
+        self.loopStrList.append(loopStr)
+        loopMin, loopMax = self._parserLoopStr(loopStr)
+        self._times(loopMin, loopMax)
         self.loopStatus, self.fireStatus = self._updateStatus(self.fireCount)
         return self
 
+    def times(self, loop):
+        self._times(loop.min, loop.max)
+        self.loopStatus, self.fireStatus = self._updateStatus(self.fireCount)
+        return self
+
+    def _plus(self, loopMin, loopMax):
+        self.min = self.min + loopMin
+        if self.max == Loop.VALUE_MAX_INT or loopMax == Loop.VALUE_MAX_INT:
+            self.max = Loop.VALUE_MAX_INT
+        else: self.max = self.max + loopMax
+
+    def plus(self, loop):
+        self._plus(loop.min, loop.max)
+        self.loopStatus, self.fireStatus = self._updateStatus(self.fireCount)
+        return self
+
+    def avail(self):
+        if self.fireStatus == Loop.FIRE_STATUS_DONE or self.loopStatus == Loop.LOOP_STATUS_MAX \
+        or self.loopStatus == Loop.LOOP_STATUS_MORE:
+            return False
+        else: return True
+
+    def reset(self):
+        if len(self.loopStrList) > 0:
+            self.min, self.max = self._parserLoopStr(self.loopStrList[0])
+            for i in range(1, len(self.loopStrList)):
+                loopMin, loopMax = self._parserLoopStr(self.loopStrList[i])
+                self._times(loopMin, loopMax)
+            self.loopStatus, self.fireStatus = self._updateStatus(self.fireCount)
+        
     def __str__(self):
         return '[' + str(self.min) + ':' + str(self.max) + '] ' + \
         str(self.fireCount) + self.fireStatus + self.loopStatus
@@ -81,13 +117,15 @@ class TNode:
         self.item = item
         self.childRank = 0
         self.loop = Loop('[]')
+        self.avail = True   # count for loop
+        self.enable = True  # disable when one of or branches is fired
         self.parent = None
         self.children = list()
 
     def __str__(self):
         result = self.type + ': ' + self.item + ' (' + str(self.childRank) + ')'
-        result += 'loop: ' + str(self.loop)
+        result += 'loop: ' + str(self.loop) + ' avail: ' + str(self.avail) + ' enable: ' + str(self.enable)
         if self.parent != None: result += ' ^: ' + self.parent.item
-        if len(self.children) > 0: result += ' v: ' + ', '.join([e.item for e in self.children])
+        if len(self.children) > 0: result += ' v: ' + ' '.join([e.item for e in self.children])
         return result
     
