@@ -106,7 +106,11 @@ class Loop:
                 loopMin, loopMax = self._parserLoopStr(self.loopStrList[i])
                 self._times(loopMin, loopMax)
             self.loopStatus, self.fireStatus = self._updateStatus(self.fireCount)
-        
+
+    def stopFire(self):
+        if self.fireStatus == Loop.FIRE_STATUS_DOING and self.loopStatus != Loop.LOOP_STATUS_LESS:
+            self.fireStatus = Loop.FIRE_STATUS_DONE
+
     def __str__(self):
         return '[' + str(self.min) + ':' + str(self.max) + '] ' + \
         str(self.fireCount) + self.fireStatus + self.loopStatus
