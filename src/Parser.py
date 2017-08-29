@@ -207,6 +207,11 @@ def _fireNode(node):
         if node.parent.type == TYPE_OP and node.parent.item == SYMBOL_OR:
             for child in node.parent.children:
                 if child.childRank != node.childRank: child.enable = False
+        elif node.parent.type == TYPE_OP and node.parent.item == SYMBOL_AND:
+            for child in node.parent.children:
+                if child.childRank != node.childRank:
+                    child.loop.stopFire()
+                    child.avail = child.loop.avail()
     node.loop.reset()
     _updateLoopNode(node)
 
