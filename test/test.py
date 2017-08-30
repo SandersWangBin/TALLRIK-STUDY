@@ -16,32 +16,53 @@ e.fire('../userDesign/hello.py:printHello')
 e.fire('../userDesign/hello.py:Hello#0.printText', 123, 'ok')
 
 
-from Parser import *
-root = genBinTree(genRpnList('<a>; ( (<b>,<c>,<d>*[0:]) | (<e> ; <f>*[2]) )'))
-print
-#printTreeUpDown(root)
-mergeLoopTreeDownUp(root)
-mergeSameOpTreeDownUp(root)
-updateLoopTreeDownUp(root)
-#print
-#printTreeUpDown(root)
-#print
+def fireNodes(exp, nodes):
+    from Parser import *
+    root = genBinTree(genRpnList(exp))
+    mergeLoopTreeDownUp(root)
+    mergeSameOpTreeDownUp(root)
+    #updateLoopTreeDownUp(root)
+    print 'Expression:', exp
+    print 'node list:', nodes
+    print 'The original tree:'
+    printTreeUpDown(root)
+    print
+    
+    nextList = generateNextList(root)
+    for n in nodes.split(' '):
+        fire(n, nextList)
+        nextList = generateNextList(root)
 
-printTreeUpDown(root)
-print
+    print 'The final tree:'
+    printTreeUpDown(root)
+    print
 
-generateNextList(root)
-fire('<a>')
-generateNextList(root)
-fire('<e>')
-generateNextList(root)
-fire('<f>')
-generateNextList(root)
-fire('<f>')
-generateNextList(root)
+def fireNodes2(exp, nodes):
+    from Tree import *
+    from Parser import *
+    mt = MergedTree(genRpnList(exp))
+    mt.printTreeUpDown()
+    mt.printWishList()
+    mt.printCandiList()
 
-printTreeUpDown(root)
-print
+    for n in nodes.split(' '):
+        print '==== ', n, ' ===='
+        mt.fire(n)
+        mt.printTreeUpDown()
+        mt.printWishList()
+        mt.printCandiList()
+
+    print
+    print
+
+
+
+#fireNodes2('<a>; ( (<b>,<c>,<d>*[0:]) | (<e> ; <f>*[2]) )', '<a> <c> <d> <b>')
+#fireNodes2('<a>; ( (<b>,<c>,<d>*[0:]) | (<e> ; <f>*[2]) )', '<a> <e> <f> <f>')
+#fireNodes2('<a>*[0:]; <b>*[0:]', '<a> <b>')
+#fireNodes2('<a>*[0:]; <b>*[0:]', '<b>')
+#fireNodes2('(<a>*[0:], <b>*[0:])*[0:2]; <c>', '<b> <a>')
+fireNodes2('(<a>*[0:1], <b>*[0:])*[0:2]; <c>', '<b> <a>')
 
 '''
 def verifyLoop(loopStr, loopStr2, fires=1):
