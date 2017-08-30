@@ -129,6 +129,10 @@ class Loop:
                 self._times(loopMin, loopMax)
             self.loopStatus, self.fireStatus = self._updateStatus(self.fireCount)
 
+    def restart(self):
+        self.fireCount = 0
+        self.loopStatus, self.fireStatus = self._updateStatus(self.fireCount)
+
     def startFire(self):
         if self.fireStatus == Loop.FIRE_STATUS_TODO: self.fireStatus = Loop.FIRE_STATUS_DOING
 
@@ -273,12 +277,6 @@ class MergedTree:
                     if node.item == SYMBOL_NEXT and not nextOne: break
         return availList
 
-    def _handleCandiTreeUpDown(self, node, _handleNode):
-        _handleNode(node)
-        #print node.item, ': ',
-        #for child in _genAvailList(node): print child.item,
-        #print
-        for child in self._genAvailList(node): self._handleAvailTreeUpDown(child, _handleNode)
 
     def _addWishList(self, node):
         if node.type == TYPE_VAR: self.wishList[node.item] = node
@@ -287,12 +285,16 @@ class MergedTree:
         self.wishList.clear()
         self._handleAvailTreeUpDown(self.root, self._addWishList)
 
-    def _addCandiList(self, node): pass
-        
+    def _addCandiList(self, node):
+        if node.type == TYPE_VAR: self.candiList[node.item] = node
 
-    def _generateCandiList(self):
+    def _cleanupCandiList(self):
+        pass
+
+
+    def _generateCandiList(self, node):
         self.candiList.clear()
-        self._handleCandiTreeUpDown(self.root, self._addCandiList)
+        self._handleTreeUpDown(node, self._addCandiList)
 
 
     def printWishList(self):
@@ -301,12 +303,12 @@ class MergedTree:
         print
 
     def printCandiList(self):
-        print 'candi list:',
-        for child in self.candiList: print child.item,
+        print 'candi list:', 
+        for child in self.candiList.keys(): print child,
         print
 
 
-    # fire node
+    # fire wish
     def _handleSingleTreeDownUp(self, node, _handleNode):
         _handleNode(node)
         if node.parent != None: self._handleSingleTreeDownUp(node.parent, _handleNode)
@@ -323,31 +325,82 @@ class MergedTree:
                             child.enable = False
                             child.avail = child.loop.avail()
             elif node.parent.type == TYPE_OP and node.parent.item == SYMBOL_NEXT:
-                for i in range(0, node.childRank): node.parent.children[i].enable = False
+                for i in range(0, node.childRank):
+                    node.parent.children[i].enable = False
+                    node.parent.children[i].loop.stopFire()
 
     def _handleChildren(self, node):
         if node.item == SYMBOL_AND and len(node.children) > 0:
-            allDone = True
-            for child in node.children:
-                done = True if child.loop.fireStatus == Loop.FIRE_STATUS_DONE else False
-                allDone = allDone and done
-            return allDone
-        ############ catch or next case to fire
-        else: return False
+            doneList = [child for child in node.children if child.loop.fireStatus == Loop.FIRE_STATUS_DONE]
+            allDone = (len(doneList) == len(node.children))
+            inList = [child for child in node.children if child.loop.loopStatus == Loop.LOOP_STATUS_IN \
+                      and child.loop.fireStatus != Loop.FIRE_STATUS_DONE]
+            almostDone = (len(inList) + len(doneList) == len(node.children))
+            return allDone, almostDone
+        ############ catch or / next case to fire
+        else: return False, False
+
+    def _restartNode(self, node):
+        node.loop.restart()
+        node.avail = node.loop.avail()
+        node.enable = True
+
+    def _restartTreeUpDown(self, node):
+        self._handleTreeUpDown(node, self._restartNode)
 
 
-    def _fireNode(self, node):
+    def _fireWish(self, node):
         if node.type != TYPE_OP:
             node.loop.fire()
             node.avail = node.loop.avail()
         else:
-            if self._handleChildren(node): node.loop.fire()
+            allDone, almostDone = self._handleChildren(node)
+            if allDone:
+                node.loop.fire() # count + 1
+                # node.children (all) restart to 0
+                if node.loop.loopStatus == Loop.LOOP_STATUS_LESS \
+                or node.loop.loopStatus == Loop.LOOP_STATUS_IN:
+                    for child in node.children: self._restartTreeUpDown(child)
+            elif almostDone:
+                print '!!!! almost done'
+                # startFire
+                # if node.loop.loopStatus:
+                # -> less or in: candiList
+                node.loop.startFire()
+                if (node.loop.loopStatus == Loop.LOOP_STATUS_LESS \
+                or node.loop.loopStatus == Loop.LOOP_STATUS_IN) \
+                and node.loop.fireCount < node.loop.max - 1:
+                    print '!!!! generate candi list'
+                    self._generateCandiList(node)
+            else:
+                # startFire
+                node.loop.startFire()
+                
             node.avail = node.loop.avail()
             if node.avail: pass ########################### how to count one time is done???
             else: node.loop.startFire()
         self._handleBrother(node)
 
+    # fire candi
+    # node.parent: alldone or almostdone, restart counter
+    def _restartForCandi(self): pass
+
+    # fire itself. upDown fire parent
+    # calculate the alldone and almostDone, generate candiList
+    # fire wish???
+    def _fireCandi(self): pass
+
+
+    # fire
     def fire(self, statement):
         if self.wishList.get(statement, None) != None:
-            self._handleSingleTreeDownUp(self.wishList[statement], self._fireNode)
+            self.candiList.clear()
+            self._handleSingleTreeDownUp(self.wishList[statement], self._fireWish)
             self._generateWishList()
+            return
+        else:
+            if self.candiList.get(statement, None) != None:
+                self.candiList.clear()
+                self._handleSingleTreeDownUp(self.candiList[statement], self._restartForCandi)
+                self._handleSingleTreeDownUp(self.candiList[statement], self._fireCandi)
+                self._generateWishList()
