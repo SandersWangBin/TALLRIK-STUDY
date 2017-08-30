@@ -1,6 +1,23 @@
 #!/usr/bin/python
 import re
 import sys
+from Stack import Stack
+
+SYMBOL_PARENLEFT = "("
+SYMBOL_PARENRIGHT = ")"
+SYMBOL_LOOP = "*"
+SYMBOL_AND = ","
+SYMBOL_OR = "|"
+SYMBOL_NEXT = ";"
+SYMBOL_VARLEFT = "<"
+SYMBOL_VARRIGHT = ">"
+SYMBOL_CONSLEFT = "["
+SYMBOL_CONSRIGHT = "]"
+SYMBOL_SPACE = " "
+
+TYPE_OP   = "OP"
+TYPE_VAR  = "VAR"
+TYPE_CONS = "CONS"
 
 class Loop:
     REG_SINGLE = '\[([0-9]*)\]'
@@ -60,6 +77,11 @@ class Loop:
         fireStatus = self._updateFireStatus(count)
         return loopStatus, fireStatus
 
+    def _updateLoop(self):
+        if count >= self.max:
+            self.loops += 1
+            self.loopIn = 0
+
     def fire(self):
         self.fireCount += 1
         self.loopStatus, self.fireStatus = self._updateStatus(self.fireCount)
@@ -107,12 +129,18 @@ class Loop:
                 self._times(loopMin, loopMax)
             self.loopStatus, self.fireStatus = self._updateStatus(self.fireCount)
 
+    def startFire(self):
+        if self.fireStatus == Loop.FIRE_STATUS_TODO: self.fireStatus = Loop.FIRE_STATUS_DOING
+
     def stopFire(self):
         if self.fireStatus == Loop.FIRE_STATUS_DOING and self.loopStatus != Loop.LOOP_STATUS_LESS:
             self.fireStatus = Loop.FIRE_STATUS_DONE
+            return True
+        else: return False
 
     def __str__(self):
-        return '[' + str(self.min) + ':' + str(self.max) + '] ' + \
+        max = str(self.max) if self.max != Loop.VALUE_MAX_INT else '~'
+        return '[' + str(self.min) + ':' + max + '] ' + \
         str(self.fireCount) + self.fireStatus + self.loopStatus
 
 class TNode:
@@ -132,4 +160,194 @@ class TNode:
         if self.parent != None: result += ' ^: ' + self.parent.item
         if len(self.children) > 0: result += ' v: ' + ' '.join([e.item for e in self.children])
         return result
+
+class MergedTree:
+    def __init__(self, rpnList):
+        self.root = self._genBinTree(rpnList)
+        self.mergeLoopTreeDownUp()
+        self.mergeSameOpTreeDownUp()
+        self.wishList = {}
+        self.candiList = {}
+        self._generateWishList()
+
+    def _genTNode(self, element):
+        return TNode(element[0], element[1])
+
+    def _genBinTree(self, rpnList):
+        rpnStack = Stack()
+        for e in rpnList:
+            type, item = e
+            if type == TYPE_CONS or type == TYPE_VAR:
+                rpnStack.push(self._genTNode(e))
+            elif type == TYPE_OP:
+                node = self._genTNode(e)
+                r = rpnStack.pop()
+                r.parent = node
+                r.childRank = 1
+                l = rpnStack.pop()
+                l.parent = node
+                node.children.append(l)
+                node.children.append(r)
+                rpnStack.push(node)
+        return rpnStack.pop()
+
+    def _handleTreeUpDown(self, node, _handleNode):
+        _handleNode(node)
+        for child in node.children: self._handleTreeUpDown(child, _handleNode)
     
+    def _handleTreeDownUp(self, node, _handleNode):
+        for child in node.children: self._handleTreeDownUp(child, _handleNode)
+        _handleNode(node)
+    
+    def _printNode(self, node):
+        if node != None: print str(node)
+    
+    def printTreeUpDown(self):
+        self._handleTreeUpDown(self.root, self._printNode)
+    
+    def printTreeDownUp(self):
+        self._handleTreeDownUp(self.root, self._printNode)
+
+    def _mergeLoopNode(self, node):
+        if node.type == TYPE_OP and node.item == SYMBOL_LOOP:
+            node.children[0].loop.timesLoopStr(node.children[1].item)
+            node.parent.children[node.childRank] = node.children[0]
+            node.children[0].parent = node.parent
+            node.children[1].parent = None
+            for rank in range(0,len(node.parent.children)):
+                node.parent.children[rank].childRank = rank
+            node.parent = None
+            del node.children
+    
+    def mergeLoopTreeDownUp(self):
+        self._handleTreeDownUp(self.root, self._mergeLoopNode)
+    
+    def _mergeSameOpNode(self, node):
+        if node.type == TYPE_OP and node.parent != None:
+            if node.item == node.parent.item:
+                if node.childRank == 0:
+                    node.parent.children = node.children + node.parent.children[1:]
+                else:
+                    node.parent.children = node.parent.children[:node.childRank] + \
+                    node.children + node.parent.children[node.childRank+1:]
+                for child in node.children: child.parent = node.parent
+                for rank in range(0,len(node.parent.children)):
+                    node.parent.children[rank].childRank = rank
+                node.parent = None
+                del node.children
+    
+    def mergeSameOpTreeDownUp(self):
+        self._handleTreeDownUp(self.root, self._mergeSameOpNode)
+
+
+    # merge next list (wish list and candi list)
+    def _genAvailList(self, node):
+        availList = list()
+        nextOne = False
+        if node.type == TYPE_OP and node.avail and node.enable:
+            for child in node.children:
+                if child.avail and child.enable:
+                    availList.append(child)
+                    if child.loop.loopStatus == Loop.LOOP_STATUS_LESS:
+                        nextOne = False
+                    else: nextOne = True
+                    if node.item == SYMBOL_NEXT and not nextOne: break
+        return availList
+
+    def _handleAvailTreeUpDown(self, node, _handleNode):
+        _handleNode(node)
+        #print node.item, ': ',
+        #for child in _genAvailList(node): print child.item,
+        #print
+        for child in self._genAvailList(node): self._handleAvailTreeUpDown(child, _handleNode)
+
+    def _genCandiList(self, node):
+        availList = list()
+        if node.type == TYPE_OP:
+            for child in node.children:
+                if child.avail and child.enable:
+                    availList.append(child)
+                    if child.loop.loopStatus == Loop.LOOP_STATUS_LESS:
+                        nextOne = False
+                    else: nextOne = True
+                    if node.item == SYMBOL_NEXT and not nextOne: break
+        return availList
+
+    def _handleCandiTreeUpDown(self, node, _handleNode):
+        _handleNode(node)
+        #print node.item, ': ',
+        #for child in _genAvailList(node): print child.item,
+        #print
+        for child in self._genAvailList(node): self._handleAvailTreeUpDown(child, _handleNode)
+
+    def _addWishList(self, node):
+        if node.type == TYPE_VAR: self.wishList[node.item] = node
+
+    def _generateWishList(self):
+        self.wishList.clear()
+        self._handleAvailTreeUpDown(self.root, self._addWishList)
+
+    def _addCandiList(self, node): pass
+        
+
+    def _generateCandiList(self):
+        self.candiList.clear()
+        self._handleCandiTreeUpDown(self.root, self._addCandiList)
+
+
+    def printWishList(self):
+        print 'wish list:',
+        for child in self.wishList.keys(): print child,
+        print
+
+    def printCandiList(self):
+        print 'candi list:',
+        for child in self.candiList: print child.item,
+        print
+
+
+    # fire node
+    def _handleSingleTreeDownUp(self, node, _handleNode):
+        _handleNode(node)
+        if node.parent != None: self._handleSingleTreeDownUp(node.parent, _handleNode)
+
+    def _handleBrother(self, node):
+        if node.parent != None:
+            if node.parent.type == TYPE_OP and node.parent.item == SYMBOL_OR:
+                for child in node.parent.children:
+                    if child.childRank != node.childRank: child.enable = False
+            elif node.parent.type == TYPE_OP and node.parent.item == SYMBOL_AND:
+                for child in node.parent.children:
+                    if child.childRank != node.childRank:
+                        if child.loop.stopFire():
+                            child.enable = False
+                            child.avail = child.loop.avail()
+            elif node.parent.type == TYPE_OP and node.parent.item == SYMBOL_NEXT:
+                for i in range(0, node.childRank): node.parent.children[i].enable = False
+
+    def _handleChildren(self, node):
+        if node.item == SYMBOL_AND and len(node.children) > 0:
+            allDone = True
+            for child in node.children:
+                done = True if child.loop.fireStatus == Loop.FIRE_STATUS_DONE else False
+                allDone = allDone and done
+            return allDone
+        ############ catch or next case to fire
+        else: return False
+
+
+    def _fireNode(self, node):
+        if node.type != TYPE_OP:
+            node.loop.fire()
+            node.avail = node.loop.avail()
+        else:
+            if self._handleChildren(node): node.loop.fire()
+            node.avail = node.loop.avail()
+            if node.avail: pass ########################### how to count one time is done???
+            else: node.loop.startFire()
+        self._handleBrother(node)
+
+    def fire(self, statement):
+        if self.wishList.get(statement, None) != None:
+            self._handleSingleTreeDownUp(self.wishList[statement], self._fireNode)
+            self._generateWishList()
