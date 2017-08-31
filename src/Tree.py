@@ -334,15 +334,42 @@ class MergedTree:
                     node.parent.children[i].loop.stopFire()
 
     def _handleChildren(self, node):
+        ############ catch and case to fire
         if node.item == SYMBOL_AND and len(node.children) > 0:
             doneList = [child for child in node.children if child.loop.fireStatus == Loop.FIRE_STATUS_DONE]
-            allDone = (len(doneList) == len(node.children))
             inList = [child for child in node.children if child.loop.loopStatus == Loop.LOOP_STATUS_IN \
                       and child.loop.fireStatus != Loop.FIRE_STATUS_DONE]
+            allDone = (len(doneList) == len(node.children))
             almostDone = (len(inList) + len(doneList) == len(node.children))
             return allDone, almostDone
-        ############ catch or / next case to fire
-        else: return False, False
+        ############ catch or case to fire
+        elif node.item == SYMBOL_OR and len(node.children) > 0:
+            doneList = [child for child in node.children if child.loop.fireStatus == Loop.FIRE_STATUS_DONE \
+                        and child.enable]
+            inList = [child for child in node.children if child.loop.loopStatus == Loop.LOOP_STATUS_IN \
+                      and child.avail and child.enable]
+            #print 'handleChildren, or branch:', node.loop.loopStr(), str(len(doneList)), str(len(inList))
+            allDone = (len(doneList) == 1)
+            almostDone = (len(inList) == 1)
+            return allDone, almostDone
+        ############ catch next case to fire
+        elif node.item == SYMBOL_NEXT and len(node.children) > 0:
+            doneStatus, doneLen = 'TODO', 0
+            inStatus, inLen = 'TODO', 0
+            for i in range(0, len(node.children)):
+                if node.children[i].loop.fireStatus == Loop.FIRE_STATUS_DONE \
+                and doneStatus != 'DONE' and inStatus == 'TODO':
+                    doneLen += 1
+                    doneStatus = 'DOING'
+                elif node.children[i].loop.fireStatus != Loop.FIRE_STATUS_DONE \
+                and node.children[i].loop.loopStatus == Loop.LOOP_STATUS_IN:
+                    doneStatus = 'DONE'
+                    inLen += 1
+                    inStatus = 'DOING'
+            allDone = doneLen == len(node.children)
+            almostDone = (doneLen + inLen) == len(node.children)
+            return allDone, almostDone
+        else: return True, False
 
     def _restartNode(self, node):
         node.loop.restart()
