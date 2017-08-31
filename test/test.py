@@ -64,7 +64,8 @@ def fireNodes2(exp, nodes):
 #fireNodes2('(<a>*[0:], <b>*[0:])*[0:2]; <c>', '<b> <a>')
 #fireNodes2('(<a>*[0:1], <b>*[0:])*[0:2]; <c>', '<b> <a> <a> <b> <b> <c>')
 #fireNodes2('(<a>*[0:], <b>*[0:])*[0:2]; <c>', '<b> <a> <b> <c>')
-fireNodes2('<d>; ((<a>*[0:], <b>*[0:])*[0:2], <c>)*[1:3]; <e>', '<d> <c> <a> <b> <a> <c> <c> <e>')
+#fireNodes2('<d>; ((<a>*[0:], <b>*[0:])*[0:2], <c>)*[1:3]; <e>', '<d> <c> <a> <b> <a> <c> <c> <e>')
+fireNodes2('<d>; ((<a>*[0:]| <b>*[0:])*[0:2]| <c>)*[1:3]; <e>', '<d> <c> <a> <b> <e>')
 
 '''
 def verifyLoop(loopStr, loopStr2, fires=1):
