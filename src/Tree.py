@@ -354,20 +354,21 @@ class MergedTree:
             return allDone, almostDone
         ############ catch next case to fire
         elif node.item == SYMBOL_NEXT and len(node.children) > 0:
+            children = [child for child in node.children if child.enable]
             doneStatus, doneLen = 'TODO', 0
             inStatus, inLen = 'TODO', 0
-            for i in range(0, len(node.children)):
-                if node.children[i].loop.fireStatus == Loop.FIRE_STATUS_DONE \
+            for i in range(0, len(children)):
+                if children[i].loop.fireStatus == Loop.FIRE_STATUS_DONE \
                 and doneStatus != 'DONE' and inStatus == 'TODO':
                     doneLen += 1
                     doneStatus = 'DOING'
-                elif node.children[i].loop.fireStatus != Loop.FIRE_STATUS_DONE \
-                and node.children[i].loop.loopStatus == Loop.LOOP_STATUS_IN:
+                elif children[i].loop.fireStatus != Loop.FIRE_STATUS_DONE \
+                and children[i].loop.loopStatus == Loop.LOOP_STATUS_IN:
                     doneStatus = 'DONE'
                     inLen += 1
                     inStatus = 'DOING'
-            allDone = doneLen == len(node.children)
-            almostDone = (doneLen + inLen) == len(node.children)
+            allDone = doneLen == len(children)
+            almostDone = (doneLen + inLen) == len(children)
             return allDone, almostDone
         else: return True, False
 
