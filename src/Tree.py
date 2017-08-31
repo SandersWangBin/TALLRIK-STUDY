@@ -158,12 +158,14 @@ class TNode:
         self.loop = Loop('[]')
         self.avail = True   # count for loop
         self.enable = True  # disable when one of or branches is fired
+        self.almostDone = False # all of children are almost done (done + in)
         self.parent = None
         self.children = list()
 
     def __str__(self):
         result = self.type + ': ' + self.item + ' (' + str(self.childRank) + ')'
-        result += 'loop: ' + str(self.loop) + ' avail: ' + str(self.avail) + ' enable: ' + str(self.enable)
+        result += 'loop: ' + str(self.loop) + ' avail(' + str(self.avail) + ') enable(' + str(self.enable) + ')'
+        result += 'almostDone' if self.almostDone else ''
         if self.parent != None: result += ' ^: ' + self.parent.item
         if len(self.children) > 0: result += ' v: ' + ' '.join([e.item for e in self.children])
         return result
@@ -253,10 +255,25 @@ class MergedTree:
         availList = list()
         nextOne = False
         if node.type == TYPE_OP and node.avail and node.enable:
+            doingLessList = [child for child in node.children \
+            if child.loop.loopStatus == Loop.LOOP_STATUS_LESS \
+            and (child.loop.fireStatus == Loop.FIRE_STATUS_DOING \
+            or child.loop.fireStatus == Loop.FIRE_STATUS_MUSTDO)]
+            for i in range(0, len(doingLessList)):
+                if (doingLessList[i].loop.fireCount == doingLessList[i].loop.min - 1 \
+                and doingLessList[i].almostDone) \
+                or doingLessList[i].loop.fireCount >= doingLessList[i].loop.min:
+                    del doingLessList[i]
+            #print '====', node.item, str(len(doingLessList)),
+            #for n in doingLessList: print n.item,
+            #print
+            if len(doingLessList) > 0: return doingLessList
+
             for child in node.children:
                 if child.avail and child.enable:
                     availList.append(child)
-                    if child.loop.loopStatus == Loop.LOOP_STATUS_LESS:
+                    if child.loop.loopStatus == Loop.LOOP_STATUS_LESS \
+                    and not child.almostDone:
                         nextOne = False
                     else: nextOne = True
                     if node.item == SYMBOL_NEXT and not nextOne: break
@@ -280,6 +297,7 @@ class MergedTree:
                     else: nextOne = True
                     if node.item == SYMBOL_NEXT and not nextOne: break
         return availList
+
 
 
     def _addWishList(self, node):
@@ -387,6 +405,7 @@ class MergedTree:
             node.avail = node.loop.avail()
         else:
             allDone, almostDone = self._handleChildren(node)
+            node.almostDone = almostDone
             if allDone:
                 node.loop.fire() # count + 1
                 # node.children (all) restart to 0
@@ -432,6 +451,7 @@ class MergedTree:
                     for child in node.children: self._restartTreeUpDown(child)
                 node.loop.fire() # count + 1
                 node.avail = node.loop.avail()
+                node.almostDone = False
             else:
                 # ignore this case
                 pass
@@ -442,12 +462,22 @@ class MergedTree:
     def _fireCandi(self, node): pass
 
 
+    def _getMustFromWishList(self):
+        mustList = {}
+        for node in self.wishList.values():
+            if node.loop.loopStatus == Loop.LOOP_STATUS_LESS \
+            and (node.loop.fireStatus == Loop.FIRE_STATUS_DOING \
+            or node.loop.fireStatus == Loop.FIRE_STATUS_MUSTDO):
+                mustList[node.item] = node
+        if len(mustList) > 0: self.wishList = mustList
+
     # fire
     def fire(self, statement):
         if self.wishList.get(statement, None) != None:
             self.candiList.clear()
             self._handleSingleTreeDownUp(self.wishList[statement], self._fireWish)
             self._generateWishList()
+            self._getMustFromWishList()
             return
         else:
             if self.candiList.get(statement, None) != None:
@@ -455,3 +485,4 @@ class MergedTree:
                 self._handleSingleTreeDownUp(self.candiList[statement], self._fireWish)
                 self.candiList.clear()
                 self._generateWishList()
+                self._getMustFromWishList()
