@@ -142,9 +142,12 @@ class Loop:
             return True
         else: return False
 
-    def __str__(self):
+    def loopStr(self):
         max = str(self.max) if self.max != Loop.VALUE_MAX_INT else '~'
-        return '[' + str(self.min) + ':' + max + '] ' + \
+        return '[' + str(self.min) + ':' + max + ']'
+
+    def __str__(self):
+        return self.loopStr() + ' ' + \
         str(self.fireCount) + self.fireStatus + self.loopStatus
 
 class TNode:
@@ -228,7 +231,8 @@ class MergedTree:
     
     def _mergeSameOpNode(self, node):
         if node.type == TYPE_OP and node.parent != None:
-            if node.item == node.parent.item:
+            if node.item == node.parent.item \
+            and node.loop.loopStr() == node.parent.loop.loopStr():
                 if node.childRank == 0:
                     node.parent.children = node.children + node.parent.children[1:]
                 else:
@@ -383,12 +387,31 @@ class MergedTree:
 
     # fire candi
     # node.parent: alldone or almostdone, restart counter
-    def _restartForCandi(self): pass
+    def _restartForCandi(self, node):
+        if node.type != TYPE_OP:
+            pass
+        else:
+            allDone, almostDone = self._handleChildren(node)
+            if allDone:
+                # I do not think this case will happen
+                pass
+            elif almostDone:
+                print '!!!! almost done - completed'
+                if (node.loop.loopStatus == Loop.LOOP_STATUS_LESS \
+                or node.loop.loopStatus == Loop.LOOP_STATUS_IN) \
+                and node.loop.fireCount < node.loop.max - 1:
+                    print '!!!! restart counts by candi list'
+                    for child in node.children: self._restartTreeUpDown(child)
+                node.loop.fire() # count + 1
+                node.avail = node.loop.avail()
+            else:
+                # ignore this case
+                pass
 
     # fire itself. upDown fire parent
     # calculate the alldone and almostDone, generate candiList
     # fire wish???
-    def _fireCandi(self): pass
+    def _fireCandi(self, node): pass
 
 
     # fire
@@ -400,7 +423,7 @@ class MergedTree:
             return
         else:
             if self.candiList.get(statement, None) != None:
-                self.candiList.clear()
                 self._handleSingleTreeDownUp(self.candiList[statement], self._restartForCandi)
-                self._handleSingleTreeDownUp(self.candiList[statement], self._fireCandi)
+                self._handleSingleTreeDownUp(self.candiList[statement], self._fireWish)
+                self.candiList.clear()
                 self._generateWishList()
