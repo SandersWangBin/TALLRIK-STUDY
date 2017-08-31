@@ -267,7 +267,9 @@ class MergedTree:
             #print '====', node.item, str(len(doingLessList)),
             #for n in doingLessList: print n.item,
             #print
-            if len(doingLessList) > 0: return doingLessList
+            if len(doingLessList) > 0:
+                #self.wishList.clear()
+                return doingLessList
 
             for child in node.children:
                 if child.avail and child.enable:
@@ -282,7 +284,7 @@ class MergedTree:
     def _handleAvailTreeUpDown(self, node, _handleNode):
         _handleNode(node)
         #print node.item, ': ',
-        #for child in _genAvailList(node): print child.item,
+        #for child in self._genAvailList(node): print child.item,
         #print
         for child in self._genAvailList(node): self._handleAvailTreeUpDown(child, _handleNode)
 
