@@ -137,7 +137,10 @@ class Loop:
         if self.fireStatus == Loop.FIRE_STATUS_TODO: self.fireStatus = Loop.FIRE_STATUS_DOING
 
     def stopFire(self):
-        if self.fireStatus == Loop.FIRE_STATUS_DOING and self.loopStatus != Loop.LOOP_STATUS_LESS:
+        if self.fireStatus == Loop.FIRE_STATUS_DOING \
+        and (self.loopStatus != Loop.LOOP_STATUS_LESS \
+        or (self.loopStatus == Loop.LOOP_STATUS_LESS \
+        and self.fireCount >= self.min - 1)):
             self.fireStatus = Loop.FIRE_STATUS_DONE
             return True
         else: return False
@@ -257,11 +260,14 @@ class MergedTree:
         availList = list()
         nextOne = False
         if node.type == TYPE_OP and node.avail and node.enable:
+            mustList = [child for child in node.children if child.mustDo \
+            and child.loop.fireStatus == Loop.FIRE_STATUS_DOING]
+            if len(mustList) > 0: return mustList
+            
             doingLessList = [child for child in node.children \
-            if (child.loop.loopStatus == Loop.LOOP_STATUS_LESS \
+            if child.loop.loopStatus == Loop.LOOP_STATUS_LESS \
             and (child.loop.fireStatus == Loop.FIRE_STATUS_DOING \
-            or child.loop.fireStatus == Loop.FIRE_STATUS_MUSTDO)) \
-            or child.mustDo]
+            or child.loop.fireStatus == Loop.FIRE_STATUS_MUSTDO)]
             for i in range(0, len(doingLessList)):
                 if (doingLessList[i].loop.fireCount == doingLessList[i].loop.min - 1 \
                 and doingLessList[i].almostDone) \
@@ -430,15 +436,15 @@ class MergedTree:
                 or node.loop.loopStatus == Loop.LOOP_STATUS_IN:
                     for child in node.children: self._restartTreeUpDown(child)
             elif almostDone:
-                print '!!!! almost done'
-                # startFire
-                # if node.loop.loopStatus:
-                # -> less or in: candiList
+                #print '!!!! almost done'
+                ## startFire
+                ## if node.loop.loopStatus:
+                ## -> less or in: candiList
                 node.loop.startFire()
                 if (node.loop.loopStatus == Loop.LOOP_STATUS_LESS \
                 or node.loop.loopStatus == Loop.LOOP_STATUS_IN) \
                 and node.loop.fireCount < node.loop.max - 1:
-                    print '!!!! generate candi list'
+                    #print '!!!! generate candi list'
                     self._generateCandiList(node)
             else:
                 # startFire
@@ -460,11 +466,11 @@ class MergedTree:
                 # I do not think this case will happen
                 pass
             elif almostDone:
-                print '!!!! almost done - completed'
+                #print '!!!! almost done - completed'
                 if (node.loop.loopStatus == Loop.LOOP_STATUS_LESS \
                 or node.loop.loopStatus == Loop.LOOP_STATUS_IN) \
                 and node.loop.fireCount < node.loop.max - 1:
-                    print '!!!! restart counts by candi list'
+                    #print '!!!! restart counts by candi list'
                     for child in node.children: self._restartTreeUpDown(child)
                 node.loop.fire() # count + 1
                 node.avail = node.loop.avail()
