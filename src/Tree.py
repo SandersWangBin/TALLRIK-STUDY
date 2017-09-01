@@ -182,6 +182,7 @@ class MergedTree:
         self.mergeSameOpTreeDownUp()
         self.wishList = {}
         self.candiList = {}
+        self._updateTreeFlagUpDown(self.root)
         self._generateWishList()
 
     def _genTNode(self, element):
@@ -318,6 +319,13 @@ class MergedTree:
         self.wishList.clear()
         self._handleAvailTreeUpDown(self.root, self._addWishList)
 
+    def _updateTreeFlagUpDown(self, node):
+        allDone, almostDone, mustDo = self._handleChildren(node)
+        node.almostDone = almostDone
+        node.mustDo = mustDo
+        for child in node.children: self._updateTreeFlagUpDown(child)
+
+    
     def _addCandiList(self, node):
         if node.type == TYPE_VAR: self.candiList[node.item] = node
 
@@ -376,6 +384,7 @@ class MergedTree:
             return allDone, almostDone, mustDo
         ############ catch or case to fire
         elif node.item == SYMBOL_OR and len(node.children) > 0:
+            totalList = [child for child in node.children if child.enable]
             doneList = [child for child in node.children if child.loop.fireStatus == Loop.FIRE_STATUS_DONE \
                         and child.enable]
             inList = [child for child in node.children if child.loop.loopStatus == Loop.LOOP_STATUS_IN \
@@ -385,7 +394,7 @@ class MergedTree:
                         and child.avail and child.enable]
             #print 'handleChildren, or branch:', node.loop.loopStr(), str(len(doneList)), str(len(inList))
             allDone = (len(doneList) == 1)
-            almostDone = (len(inList) == 1)
+            almostDone = (len(inList) + len(doneList) == len(totalList))
             mustDo = len(mustList) > 0
             return allDone, almostDone, mustDo
         ############ catch next case to fire
@@ -398,8 +407,9 @@ class MergedTree:
                 and doneStatus != 'DONE' and inStatus == 'TODO':
                     doneLen += 1
                     doneStatus = 'DOING'
-                elif children[i].loop.fireStatus != Loop.FIRE_STATUS_DONE \
-                and children[i].loop.loopStatus == Loop.LOOP_STATUS_IN:
+                elif (children[i].loop.fireStatus != Loop.FIRE_STATUS_DONE \
+                and children[i].loop.loopStatus == Loop.LOOP_STATUS_IN) \
+                or child.almostDone:
                     doneStatus = 'DONE'
                     inLen += 1
                     inStatus = 'DOING'
@@ -435,6 +445,9 @@ class MergedTree:
                 if node.loop.loopStatus == Loop.LOOP_STATUS_LESS \
                 or node.loop.loopStatus == Loop.LOOP_STATUS_IN:
                     for child in node.children: self._restartTreeUpDown(child)
+                if node.loop.loopStatus == Loop.LOOP_STATUS_LESS:
+                    # WHY STATUS IN should not update mustDo flag???
+                    _, node.almostDone, node.mustDo = self._handleChildren(node)
             elif almostDone:
                 #print '!!!! almost done'
                 ## startFire
