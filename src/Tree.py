@@ -159,13 +159,15 @@ class TNode:
         self.avail = True   # count for loop
         self.enable = True  # disable when one of or branches is fired
         self.almostDone = False # all of children are almost done (done + in)
+        self.mustDo = False # at least one of children must be done
         self.parent = None
         self.children = list()
 
     def __str__(self):
         result = self.type + ': ' + self.item + ' (' + str(self.childRank) + ')'
         result += 'loop: ' + str(self.loop) + ' avail(' + str(self.avail) + ') enable(' + str(self.enable) + ')'
-        result += 'almostDone' if self.almostDone else ''
+        result += ' almostDone' if self.almostDone else ''
+        result += ' mustDo' if self.mustDo else ''
         if self.parent != None: result += ' ^: ' + self.parent.item
         if len(self.children) > 0: result += ' v: ' + ' '.join([e.item for e in self.children])
         return result
@@ -256,9 +258,10 @@ class MergedTree:
         nextOne = False
         if node.type == TYPE_OP and node.avail and node.enable:
             doingLessList = [child for child in node.children \
-            if child.loop.loopStatus == Loop.LOOP_STATUS_LESS \
+            if (child.loop.loopStatus == Loop.LOOP_STATUS_LESS \
             and (child.loop.fireStatus == Loop.FIRE_STATUS_DOING \
-            or child.loop.fireStatus == Loop.FIRE_STATUS_MUSTDO)]
+            or child.loop.fireStatus == Loop.FIRE_STATUS_MUSTDO)) \
+            or child.mustDo]
             for i in range(0, len(doingLessList)):
                 if (doingLessList[i].loop.fireCount == doingLessList[i].loop.min - 1 \
                 and doingLessList[i].almostDone) \
@@ -359,19 +362,26 @@ class MergedTree:
             doneList = [child for child in node.children if child.loop.fireStatus == Loop.FIRE_STATUS_DONE]
             inList = [child for child in node.children if child.loop.loopStatus == Loop.LOOP_STATUS_IN \
                       and child.loop.fireStatus != Loop.FIRE_STATUS_DONE]
+            mustList = [child for child in node.children if child.loop.loopStatus == Loop.LOOP_STATUS_LESS \
+                        or child.mustDo]
             allDone = (len(doneList) == len(node.children))
             almostDone = (len(inList) + len(doneList) == len(node.children))
-            return allDone, almostDone
+            mustDo = len(mustList) > 0
+            return allDone, almostDone, mustDo
         ############ catch or case to fire
         elif node.item == SYMBOL_OR and len(node.children) > 0:
             doneList = [child for child in node.children if child.loop.fireStatus == Loop.FIRE_STATUS_DONE \
                         and child.enable]
             inList = [child for child in node.children if child.loop.loopStatus == Loop.LOOP_STATUS_IN \
                       and child.avail and child.enable]
+            mustList = [child for child in node.children if (child.loop.loopStatus == Loop.LOOP_STATUS_LESS \
+                        or child.mustDo) \
+                        and child.avail and child.enable]
             #print 'handleChildren, or branch:', node.loop.loopStr(), str(len(doneList)), str(len(inList))
             allDone = (len(doneList) == 1)
             almostDone = (len(inList) == 1)
-            return allDone, almostDone
+            mustDo = len(mustList) > 0
+            return allDone, almostDone, mustDo
         ############ catch next case to fire
         elif node.item == SYMBOL_NEXT and len(node.children) > 0:
             children = [child for child in node.children if child.enable]
@@ -387,10 +397,14 @@ class MergedTree:
                     doneStatus = 'DONE'
                     inLen += 1
                     inStatus = 'DOING'
+            mustList = [child for child in node.children if (child.loop.loopStatus == Loop.LOOP_STATUS_LESS \
+                        or child.mustDo) \
+                        and child.avail and child.enable]
             allDone = doneLen == len(children)
             almostDone = (doneLen + inLen) == len(children)
-            return allDone, almostDone
-        else: return True, False
+            mustDo = len(mustList) > 0
+            return allDone, almostDone, mustDo
+        else: return True, False, False
 
     def _restartNode(self, node):
         node.loop.restart()
@@ -406,8 +420,9 @@ class MergedTree:
             node.loop.fire()
             node.avail = node.loop.avail()
         else:
-            allDone, almostDone = self._handleChildren(node)
+            allDone, almostDone, mustDo = self._handleChildren(node)
             node.almostDone = almostDone
+            node.mustDo = mustDo
             if allDone:
                 node.loop.fire() # count + 1
                 # node.children (all) restart to 0
@@ -440,7 +455,7 @@ class MergedTree:
         if node.type != TYPE_OP:
             pass
         else:
-            allDone, almostDone = self._handleChildren(node)
+            allDone, almostDone, mustDo = self._handleChildren(node)
             if allDone:
                 # I do not think this case will happen
                 pass
