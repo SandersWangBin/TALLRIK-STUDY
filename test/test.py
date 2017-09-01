@@ -15,58 +15,86 @@ print e
 e.fire('../userDesign/hello.py:printHello')
 e.fire('../userDesign/hello.py:Hello#0.printText', 123, 'ok')
 
-
-def fireNodes(exp, nodes):
-    from Parser import *
-    root = genBinTree(genRpnList(exp))
-    mergeLoopTreeDownUp(root)
-    mergeSameOpTreeDownUp(root)
-    #updateLoopTreeDownUp(root)
-    print 'Expression:', exp
-    print 'node list:', nodes
-    print 'The original tree:'
-    printTreeUpDown(root)
-    print
-    
-    nextList = generateNextList(root)
-    for n in nodes.split(' '):
-        fire(n, nextList)
-        nextList = generateNextList(root)
-
-    print 'The final tree:'
-    printTreeUpDown(root)
-    print
-
-def fireNodes2(exp, nodes):
-    from Tree import *
-    from Parser import *
+from Tree import *
+from Parser import *
+def fireNodes(exp, nodes, expects, printFlag=False):
     mt = MergedTree(genRpnList(exp))
-    mt.printTreeUpDown()
-    mt.printWishList()
-    mt.printCandiList()
-
-    for n in nodes.split(' '):
-        print '==== ', n, ' ===='
-        mt.fire(n)
+    if printFlag:
         mt.printTreeUpDown()
         mt.printWishList()
         mt.printCandiList()
 
-    print
-    print
+    i = 0
+    result = True
+    for n in nodes.split(' '):
+        if len(n) > 0:
+            if printFlag:
+                print '==== ', n, ' ===='
+            mt.fire(n)
+            if printFlag:
+                mt.printWishList()
+                mt.printCandiList()
+            wishList = mt.wishList.keys()
+            wishList = sorted(wishList)
+            if wishList != expects[i]:
+                result = False
+                if printFlag:
+                    print '!!!!!!!!!!!!!!!!! WRONG !!!!!!!!!!'
+                    print 'wishList', wishList
+                    print 'expects', str(i), expects[i]
+                    mt.printTreeUpDown()
+            i += 1
+    if printFlag:
+        print
+        print
+    return result
 
 
 
-#fireNodes2('<a>; ( (<b>,<c>,<d>*[0:]) | (<e> ; <f>*[2]) )', '<a> <c> <d> <b>')
-#fireNodes2('<a>; ( (<b>,<c>,<d>*[0:]) | (<e> ; <f>*[2]) )', '<a> <e> <f> <f>')
-#fireNodes2('<a>*[0:]; <b>*[0:]', '<a> <b>')
-#fireNodes2('<a>*[0:]; <b>*[0:]', '<b>')
-#fireNodes2('(<a>*[0:], <b>*[0:])*[0:2]; <c>', '<b> <a>')
-#fireNodes2('(<a>*[0:1], <b>*[0:])*[0:2]; <c>', '<b> <a> <a> <b> <b> <c>')
-#fireNodes2('(<a>*[0:], <b>*[0:])*[0:2]; <c>', '<b> <a> <b> <c>')
-#fireNodes2('<d>; ((<a>*[0:], <b>*[0:])*[0:2], <c>)*[1:3]; <e>', '<d> <c> <a> <b> <a> <c> <c> <e>')
-#fireNodes2('<d>; ((<a>*[0:]| <b>*[0:])*[0:2]| <c>)*[1:3]; <e>', '<d> <c> <a> <b> <e>')
-fireNodes2('<d>; ((<a>*[0:]; <b>*[0:])*[0:2]; <c>)*[1:3]; <e>', '<d> <c>')
+print '=>', fireNodes('<a>; ( (<b>,<c>,<d>*[0:]) | (<e> ; <f>*[2]) )', '<a> <c> <d> <b>', 
+[['<b>','<c>','<d>','<e>'], ['<b>','<d>'], ['<b>','<d>'], []])
+print '=>', fireNodes('<a>; ( (<b>,<c>,<d>*[0:]) | (<e> ; <f>*[2]) )', '<a> <e> <f> <f>',
+[['<b>','<c>','<d>','<e>'], ['<f>'], ['<f>'], []])
+print '=>', fireNodes('<a>*[0:]; <b>*[0:]', '<a> <b>',
+[['<a>','<b>'], ['<b>']])
+print '=>', fireNodes('<a>*[0:]; <b>*[0:]', '<b>',
+[['<b>']])
+
+print '=>', fireNodes('(<a>*[0:], <b>*[0:])*[0:2]; <c>', '<b> <a> <a> <b> <a> <c>',
+[['<a>','<b>','<c>'],['<a>','<c>'], ['<a>','<c>'], ['<a>','<b>','<c>'], ['<a>','<c>'], []])
+
+print '=>', fireNodes('(<a>*[0:1], <b>*[0:])*[0:2]; <c>', '<b> <a> <a> <b> <b> <c>',
+[['<a>','<b>','<c>'], ['<a>','<b>','<c>'], ['<b>','<c>'],['<b>','<c>'],['<b>','<c>'],[]])
+
+print '=>', fireNodes('(<a>*[0:], <b>*[0:])*[0:2]; <c>', '<b> <a> <b> <c>',
+[['<a>','<b>','<c>'], ['<a>','<c>'], ['<a>','<b>','<c>'], []])
+
+print '=>', fireNodes('<d>; ((<a>*[0:], <b>*[0:])*[0:2], <c>)*[1:3]; <e>', '<d> <c> <c> <e>',
+[['<a>','<b>','<c>'], ['<a>','<b>','<e>'], ['<a>','<b>','<e>'], []])
+
+print '=>', fireNodes('<d>; ((<a>*[0:]| <b>*[0:])*[0:2]| <c>)*[1:3]; <e>', '<d> <c> <a> <a> <b> <e>',
+[['<a>','<b>','<c>'], ['<a>','<b>','<c>','<e>'], ['<a>','<e>'], ['<a>','<e>'], ['<b>','<e>'], []])
+
+print '=>', fireNodes('<d>; ((<a>*[0:]; <b>*[0:])*[0:2]; <c>)*[1:2]; <e>', '<d> <c> <a> <a> <b> <c>',
+[['<a>','<b>','<c>'],['<a>','<b>','<c>','<e>'], ['<a>','<b>','<c>'], ['<a>','<b>','<c>'], ['<b>','<c>'], ['<e>']])
+
+print '=>', fireNodes('(<a>; <b>), (<c>; <d>)', '<c> <d> <a> <b>',
+[['<d>'], ['<a>'], ['<b>'], []])
+
+print '=>', fireNodes('(<a>*[3:7], <b>*[2:4])*[1:1]; <c>', '<a> <a> <a> <b> <b> <b> <c>',
+[['<a>'], ['<a>'], ['<a>', '<b>'], ['<b>'], ['<b>', '<c>'], ['<b>', '<c>'], []])
+
+print '=>', fireNodes('(<a>*[3:7], <b>*[2:4])*[1:3], <c>', '<a> <a> <a> <b> <b> <c>',
+[['<a>'], ['<a>'], ['<a>', '<b>'], ['<b>'], ['<b>', '<c>'], []])
+
+print '=>', fireNodes('(<a>*[3:7], <b>*[2:4])*[0:3], <c>', '<a> <a> <a> <b> <b> <c>',
+[['<a>'], ['<a>'], ['<a>', '<b>'], ['<b>'], ['<b>', '<c>'],[]])
+
+print '=>', fireNodes('(<a>*[3:7], <b>*[2:4])*[0:3], <c>', '<c>',
+[['<a>', '<b>']])
+
+print '=>', fireNodes('(<a>*[0:], <b>)*[2:4]; <c>', '<b> <b> <c>',
+[['<a>'],['<a>', '<c>'], []])
 
 '''
 def verifyLoop(loopStr, loopStr2, fires=1):
