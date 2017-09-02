@@ -43,7 +43,7 @@ def _lookupRight(left):
     else: return left
 
 def genRpnList(runorExp):
-    print runorExp
+    #print runorExp
     rpnList = list()
     opStack = Stack()
     i = 0
@@ -84,7 +84,7 @@ def genRpnList(runorExp):
             pass
         i += 1
     while not opStack.isEmpty(): rpnList.append((TYPE_OP, opStack.pop()))
-    print rpnList
+    #print rpnList
     return rpnList
 
 def _genTNode(element):
@@ -168,11 +168,15 @@ def updateLoopTreeDownUp(root):
 
 def _genAvailList(node):
     availList = list()
+    nextOne = False
     if node.type == TYPE_OP:
         for child in node.children:
             if child.avail and child.enable:
                 availList.append(child)
-                if node.item == SYMBOL_NEXT: break
+                if child.loop.loopStatus == Loop.LOOP_STATUS_LESS:
+                    nextOne = False
+                else: nextOne = True
+                if node.item == SYMBOL_NEXT and not nextOne: break
     return availList
 
 def _handleAvailTreeUpDown(node, _handleNode):
@@ -193,16 +197,16 @@ def generateNextList(root):
     global nextList
     nextList = list()
     _handleAvailTreeUpDown(root, _addNextList)
+    print '  next list:',
     for node in nextList: print node.item,
     print
+    return nextList
 
 def _handleSingleTreeDownUp(node, _handleNode):
     _handleNode(node)
     if node.parent != None: _handleSingleTreeDownUp(node.parent, _handleNode)
 
-def _fireNode(node):
-    node.loop.fire()
-    node.avail = node.loop.avail()
+def _handleBrother(node):
     if node.parent != None:
         if node.parent.type == TYPE_OP and node.parent.item == SYMBOL_OR:
             for child in node.parent.children:
@@ -210,15 +214,27 @@ def _fireNode(node):
         elif node.parent.type == TYPE_OP and node.parent.item == SYMBOL_AND:
             for child in node.parent.children:
                 if child.childRank != node.childRank:
-                    child.loop.stopFire()
-                    child.avail = child.loop.avail()
-    node.loop.reset()
-    _updateLoopNode(node)
+                    if child.loop.stopFire():
+                        child.enable = False
+                        child.avail = child.loop.avail()
+        elif node.parent.type == TYPE_OP and node.parent.item == SYMBOL_NEXT:
+            for i in range(0, node.childRank): node.parent.children[i].enable = False
+
+
+def _fireNode(node):
+    if node.type != TYPE_OP:
+        node.loop.fire()
+        node.avail = node.loop.avail()
+    _handleBrother(node)
+    
+    #node.loop.reset()
+    #_updateLoopNode(node)
 
 def fireNode(node):
     _handleSingleTreeDownUp(node, _fireNode)
 
-def fire(item):
+def fire(item, nextList):
     for node in nextList:
         if node.item == item:
+            nextList = list()
             fireNode(node)
