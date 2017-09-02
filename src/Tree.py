@@ -392,9 +392,9 @@ class MergedTree:
             mustList = [child for child in node.children if (child.loop.loopStatus == Loop.LOOP_STATUS_LESS \
                         or child.mustDo) \
                         and child.avail and child.enable]
-            #print 'handleChildren, or branch:', node.loop.loopStr(), str(len(doneList)), str(len(inList))
+            #print 'handleChildren, or branch:', node.item, node.loop.loopStr(), str(len(doneList)), str(len(inList)),
             allDone = (len(doneList) == 1)
-            almostDone = (len(inList) + len(doneList) == len(totalList))
+            almostDone = ((len(inList) + len(doneList) == len(totalList)) and len(inList) > 0)
             mustDo = len(mustList) > 0
             return allDone, almostDone, mustDo
         ############ catch next case to fire
@@ -417,7 +417,7 @@ class MergedTree:
                         or child.mustDo) \
                         and child.avail and child.enable]
             allDone = doneLen == len(children)
-            almostDone = (doneLen + inLen) == len(children)
+            almostDone = ((doneLen + inLen) == len(children) and inLen > 0)
             mustDo = len(mustList) > 0
             return allDone, almostDone, mustDo
         else: return True, False, False
@@ -486,9 +486,9 @@ class MergedTree:
                 and node.loop.fireCount < node.loop.max - 1:
                     #print '!!!! restart counts by candi list'
                     for child in node.children: self._restartTreeUpDown(child)
-                node.loop.fire() # count + 1
+                    node.loop.fire() # count + 1
+                    node.almostDone = False
                 node.avail = node.loop.avail()
-                node.almostDone = False
             else:
                 # ignore this case
                 pass
@@ -514,7 +514,7 @@ class MergedTree:
             self.candiList.clear()
             self._handleSingleTreeDownUp(self.wishList[statement], self._fireWish)
             self._generateWishList()
-            self._getMustFromWishList()
+            #self._getMustFromWishList()
             return
         else:
             if self.candiList.get(statement, None) != None:
@@ -522,4 +522,4 @@ class MergedTree:
                 self._handleSingleTreeDownUp(self.candiList[statement], self._fireWish)
                 self.candiList.clear()
                 self._generateWishList()
-                self._getMustFromWishList()
+                #self._getMustFromWishList()
