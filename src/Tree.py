@@ -447,6 +447,7 @@ class MergedTree:
                     for child in node.children: self._restartTreeUpDown(child)
                 if node.loop.loopStatus == Loop.LOOP_STATUS_LESS:
                     # WHY STATUS IN should not update mustDo flag???
+                    # BECAUSE STATUS IN the mustDo is not needed, still follow the previous loop
                     _, node.almostDone, node.mustDo = self._handleChildren(node)
             elif almostDone:
                 #print '!!!! almost done'
