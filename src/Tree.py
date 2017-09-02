@@ -261,8 +261,8 @@ class MergedTree:
         availList = list()
         nextOne = False
         if node.type == TYPE_OP and node.avail and node.enable:
-            mustList = [child for child in node.children if child.mustDo \
-            and child.loop.fireStatus == Loop.FIRE_STATUS_DOING]
+            mustList = [child for child in node.children if (child.mustDo \
+            and child.loop.fireStatus == Loop.FIRE_STATUS_DOING)]
             if len(mustList) > 0: return mustList
             
             doingLessList = [child for child in node.children \
@@ -274,9 +274,6 @@ class MergedTree:
                 and doingLessList[i].almostDone) \
                 or doingLessList[i].loop.fireCount >= doingLessList[i].loop.min:
                     del doingLessList[i]
-            #print '====', node.item, str(len(doingLessList)),
-            #for n in doingLessList: print n.item,
-            #print
             if len(doingLessList) > 0:
                 #self.wishList.clear()
                 return doingLessList
@@ -336,6 +333,14 @@ class MergedTree:
     def _generateCandiList(self, node):
         self.candiList.clear()
         self._handleTreeUpDown(node, self._addCandiList)
+        ################################################
+        # THIS IS WRONG.
+        # THE self.root should have self.copy for original
+        # every node in self.root connects its counterpart
+        # in the self.copy which only can be used in generate
+        # the candidate.
+        # in this function, node should be used in self.copy
+        # _handleTreeUpDown should be _handleAvailTreeUpDown
 
 
     def printWishList(self):
@@ -376,8 +381,8 @@ class MergedTree:
             doneList = [child for child in node.children if child.loop.fireStatus == Loop.FIRE_STATUS_DONE]
             inList = [child for child in node.children if child.loop.loopStatus == Loop.LOOP_STATUS_IN \
                       and child.loop.fireStatus != Loop.FIRE_STATUS_DONE]
-            mustList = [child for child in node.children if child.loop.loopStatus == Loop.LOOP_STATUS_LESS \
-                        or child.mustDo]
+            mustList = [child for child in node.children if (child.loop.loopStatus == Loop.LOOP_STATUS_LESS \
+                        or child.mustDo) and child.enable]
             allDone = (len(doneList) == len(node.children))
             almostDone = (len(inList) + len(doneList) == len(node.children))
             mustDo = len(mustList) > 0
@@ -387,9 +392,10 @@ class MergedTree:
             totalList = [child for child in node.children if child.enable]
             doneList = [child for child in node.children if child.loop.fireStatus == Loop.FIRE_STATUS_DONE \
                         and child.enable]
-            inList = [child for child in node.children if child.loop.loopStatus == Loop.LOOP_STATUS_IN \
+            inList = [child for child in node.children if (child.loop.loopStatus == Loop.LOOP_STATUS_IN \
+                      or (child.almostDone and child.loop.fireCount == child.loop.min - 1))
                       and child.avail and child.enable]
-            mustList = [child for child in node.children if (child.loop.loopStatus == Loop.LOOP_STATUS_LESS \
+            mustList = [child for child in node.children if ((child.loop.loopStatus == Loop.LOOP_STATUS_LESS and not child.almostDone) \
                         or child.mustDo) \
                         and child.avail and child.enable]
             #print 'handleChildren, or branch:', node.item, node.loop.loopStr(), str(len(doneList)), str(len(inList)),
