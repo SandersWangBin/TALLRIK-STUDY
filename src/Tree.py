@@ -121,6 +121,14 @@ class Loop:
             return False
         else: return True
 
+    def clone(self):
+        if len(self.loopStrList) > 0:
+            newLoop = Loop(self.loopStrList[0])
+            for i in range(1, len(self.loopStrList)):
+                newLoop.timesLoopStr(self.loopStrList[i])
+            return newLoop
+        else: return None
+            
     def reset(self):
         if len(self.loopStrList) > 0:
             self.min, self.max = self._parserLoopStr(self.loopStrList[0])
@@ -165,6 +173,17 @@ class TNode:
         self.mustDo = False # at least one of children must be done
         self.parent = None
         self.children = list()
+        self.copy = None    # point to the copy of init TNode.
+
+    def clone(self):
+        newTNode = TNode(self.type, self.item)
+        newTNode.childRank = self.childRank
+        newTNode.loop = self.loop.clone()
+        newTNode.avail = self.avail
+        newTNode.enable = self.enable
+        newTNode.almostDone = self.almostDone
+        newTNode.mustDo = self.mustDo
+        return newTNode
 
     def __str__(self):
         result = self.type + ': ' + self.item + ' (' + str(self.childRank) + ')'
@@ -184,6 +203,7 @@ class MergedTree:
         self.candiList = {}
         self._updateTreeFlagUpDown(self.root)
         self._generateWishList()
+        self._copyTreeDownUp()
 
     def _genTNode(self, element):
         return TNode(element[0], element[1])
@@ -255,6 +275,18 @@ class MergedTree:
     def mergeSameOpTreeDownUp(self):
         self._handleTreeDownUp(self.root, self._mergeSameOpNode)
 
+
+    def _copyNode(self, node):
+        # copy itself
+        # if children copy, link them
+        newNode = node.clone()
+        newNode.copy = node
+        node.copy = newNode
+        for child in node.children:
+            newNode.children.append(child.copy)
+
+    def _copyTreeDownUp(self):
+        self._handleTreeDownUp(self.root, self._copyNode)
 
     # merge next list (wish list and candi list)
     def _genAvailList(self, node):
@@ -332,7 +364,10 @@ class MergedTree:
 
     def _generateCandiList(self, node):
         self.candiList.clear()
-        self._handleTreeUpDown(node, self._addCandiList)
+        newNode = node.copy
+        self._handleAvailTreeUpDown(newNode, self._addCandiList)
+        for k, v in self.candiList.iteritems():
+            self.candiList[k] = v.copy
         ################################################
         # THIS IS WRONG.
         # THE self.root should have self.copy for original
