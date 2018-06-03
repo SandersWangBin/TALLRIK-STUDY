@@ -1,0 +1,1837 @@
+
+
+<!DOCTYPE html>
+<html class="yr" lang="nb-no">
+<head>
+	<meta charset="utf-8">
+	<title>
+		Yr – Værvarsel for  Stockholm (Sverige)</title>
+	<link rel="stylesheet" media="screen, print, projection" href="/css/yr.min.versjonert.PMxLfSBrVXEB9GX3z0X_ctwsJBg.css">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<meta name="viewport" content="width=990" />
+	<meta name="Robots" content="index,follow" />
+	<meta name="Googlebot" content="index,follow" />
+	<meta name="Revisit-after" content="1 Days" />
+	<meta name="description" content="Værvarsel for 9,3 millioner steder i verden!" />
+	<meta name="dcterms.creator" content="NRK og Meteorologisk institutt" />
+	<meta name="Publisher" content="NRK og Meteorologisk institutt" />
+	<meta name="dcterms.rights" content="Opphavsrett:NRK og Meteorologisk institutt © 2018" />
+	<meta name="dcterms.dateCopyrighted" content="2018" />
+	<meta property="fb:pages" content="172533639487543,165167636714,389088897795,11222655995,1474569816109652,447786608674503,121452668537,184793774581,68272763593,72653046379,191000862020,189488087742,175704842864,112405921653,333692355205,56802972234,54841699188,129793040372168,107387162663,105131132864967,145334842163620,249850135036852,1428882810700994,101740483237006,68472278618,572062989528181,274878205068,142580975786066,721393157893837,22652235447,1635326476687026,649715715061037,175412915968811,258697507625,194077312500,596161207086401,68480421097,163083014696,7186751742,352840908242419,201423136709287,511119855564837,248944903276,502706283115459,498319236944335,253356894737712,121611187709,175678445789954,108915949149884,311405494694,139034589545337,304128523105007,182100405141085,188370634560065,22409053078,147497881941532,629908100385219,1635502146707466,300758636741693,1538935606342361,212610265605206,112730048747586,1419496004938398" />
+	<meta property="og:site_name" content="yr.no" />
+	<link rel="Copyright" title="Opphavsrett Meteorologisk institutt og NRK" href="http://om.yr.no/info/vilkar/" />
+	<link rel="Search" title="Søk" href="/sok/" />
+	
+    
+	<meta name="Keywords" content="Sverige, Stockholm, Stockholm, vær, ver, vêr, weather" />
+<meta http-equiv="Content-language" content="nob" />
+<meta http-equiv="Description" content="Værvarsel for Stockholm" />
+<meta http-equiv="Abstract" content="Værvarsel for Stockholm" />
+<meta property="lp:url" content="https://www.yr.no/sted/Sverige/Stockholm/Stockholm/" />
+<link rel="alternate" title="# nynorsk" hreflang="nn" href="/stad/Sverige/Stockholm/Stockholm/" />
+<link rel="alternate" title="# english" hreflang="en" href="/place/Sweden/Stockholm/Stockholm/" />
+<link rel="alternate" type="text/html" media="handheld" href="https://m.yr.no/sted/Sverige/Stockholm/Stockholm/" title="Mobil: Værvarsel for Stockholm" />
+<meta property="og:title" content="Værvarsel for  Stockholm" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.yr.no/sted/Sverige/Stockholm/Stockholm" />
+<meta property="og:image" content="/grafikk/sym/v2017/png/200/01d.png" />
+<meta property="og:description" content="3. juni 2018 kl 10-12: Klarvær, Temperatur 25, 0 mm, Flau vind, 1 m/s fra øst" />
+<!--PunktUtlandet:2673730-->
+
+<link rel="alternate" type="application/rss+xml" title="RSS værvarsel for Stockholm" href="https://www.yr.no/sted/Sverige/Stockholm/Stockholm/varsel.rss" />
+	<!-- Google Analytics -->
+	<script>
+		window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+		ga('create', 'UA-25535414-5', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<script async src="https://www.google-analytics.com/analytics.js"></script>
+	<!-- End Google Analytics -->
+
+	<script src="https://pp.lp4.io/app/4f/bb/91/4fbb91ddd9d93eb946000000.js" async></script>
+</head>
+<body class="yr-point yr-myplaces">
+	<svg style="position: absolute" width="0" height="0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<symbol id="cloud" filter="url(#dropshadow)">
+			<path d="M55.7,5A23.94,23.94,0,0,0,34.37,18.05a9.9,9.9,0,0,0-12.78,5.56,15,15,0,0,0-1.71-.1A14.81,14.81,0,0,0,9.2,28,14.63,14.63,0,0,0,5,38.17v.21A14.83,14.83,0,0,0,19.88,53.06H75.59a14.3,14.3,0,0,0,3.67-28.14A23.93,23.93,0,0,0,55.7,5Z"></path>
+			<image x="5" y="14" width="85" height="43" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAAAkCAMAAAAkYj0PAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAVUExURSgoKExpcaCgoFBQUG5ublBQUISEhI1fsT0AAAAHdFJOUxsACBsPFRpGXuFgAAABWElEQVRIx7XV25bDIAgF0BMu/v8nF/E+iWlqHNKVN3cpIMXxL4GFM3SQfTazkUyxk63oLYwlVSy2silXkS/wUrZS2a3ZCn1zsdSw7UUYijuHsTa1IvfwWrbSXLkc4N9r27JViwmM1UtWXA3hohQ41m6vl8FQZi7wu2z7KXPW4uRiZS+2AmdXN7DdQEQWQHYHlt6z0dXBBa2xeeVktiZc1jDoF5eGkI4d4MjKc7cNbZ3bqjocLLx5oPDYTaIftcfvAvcs2GFxVsJTOP1wO1jGdUSLaz/DWA1Tl45+Tkqul2ArcPzayGq8JafOUffP3TUp6JQs+Rptc6vtmtBkUw+dv0NzWG0PYf8O7Ym09+ITXyXOPZqEX95aFe3PKxRsL2XV3HR+ZALirPSF0ceHp6F51WBv1A22VaW2GHWzWvat8LOAPf4CrjrA+neNK7+PQBf/DmmLrId09/QDWyESBsibwBUAAAAASUVORK5CYII="></image>
+		</symbol>
+
+		<symbol id="fog">
+			<g fill="#999999">
+				<path d="M88.7,3H14.3C13.6,3,13,2.3,13,1.5S13.6,0,14.3,0h74.4C89.4,0,90,0.7,90,1.5S89.4,3,88.7,3z"></path>
+				<path d="M75.7,11H1.3C0.6,11,0,10.3,0,9.5S0.6,8,1.3,8h74.4C76.4,8,77,8.7,77,9.5S76.4,11,75.7,11z"></path>
+				<path d="M86.7,19H12.3c-0.7,0-1.3-0.7-1.3-1.5s0.6-1.5,1.3-1.5h74.4c0.7,0,1.3,0.7,1.3,1.5S87.4,19,86.7,19z"></path>
+			</g>
+		</symbol>
+		<filter id="dropshadow" x="-0.1" y="0" width="130%" height="130%">
+			<feGaussianBlur in="SourceAlpha" stdDeviation="2"></feGaussianBlur>
+			<feOffset dx="1" dy="3"></feOffset>
+			<feComponentTransfer>
+				<feFuncA type="linear" slope="0.6"></feFuncA>
+			</feComponentTransfer>
+			<feMerge>
+				<feMergeNode></feMergeNode>
+				<feMergeNode in="SourceGraphic"></feMergeNode>
+			</feMerge>
+		</filter>
+		<symbol id="lightning">
+			<polygon fill="#ffdd15" points="19.6 23.42 12.74 20.39 15.55 5 5 24.49 12.08 27.51 7.49 45 19.6 23.42"></polygon>
+		</symbol>
+
+		<defs>
+			<linearGradient id="moon-grad" x1="0%" y1="50%" x2="100%" y2="0%">
+				<stop offset="0%" stop-color="#686e73" />
+				<stop offset="100%" stop-color="#6a7075" />
+			</linearGradient>
+		</defs>
+		<symbol id="moon">
+			<path d="M28.43,0A28.44,28.44,0,0,1,32.3,14.32,28.61,28.61,0,0,1,3.69,42.93,28.71,28.71,0,0,1,0,42.66,28.59,28.59,0,1,0,28.43,0Z" fill="url(#moon-grad)"></path>
+		</symbol>
+
+		<symbol id="raindrop">
+			<path fill="#0062bf" d="M2.5,13A2.5,2.5,0,0,1,.21,9.51l3.55-8a2.5,2.5,0,0,1,4.57,2l-3.55,8A2.5,2.5,0,0,1,2.5,13Z"></path>
+		</symbol>
+
+		<symbol id="snowflake">
+			<path fill="#47c0e3" d="M11.68,4.47H8.85L10.27,2A1.35,1.35,0,1,0,7.93.67L6.51,3.12,5.1.67A1.35,1.35,0,0,0,3.26.18,1.35,1.35,0,0,0,2.76,2L4.18,4.47H1.35a1.35,1.35,0,1,0,0,2.7H4.18L2.76,9.62a1.35,1.35,0,0,0,.49,1.84A1.39,1.39,0,0,0,5.1,11L6.51,8.52,7.93,11a1.35,1.35,0,1,0,2.34-1.35L8.85,7.17h2.83a1.35,1.35,0,1,0,0-2.7Z"></path>
+		</symbol>
+
+		<defs>
+			<linearGradient id="sun-inner-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+				<stop offset="0%" stop-color="#ffaf22" />
+				<stop offset="100%" stop-color="#f09900" />
+			</linearGradient>
+			<radialGradient id="sun-glow-grad" cx="41" cy="41" r="41" gradientUnits="userSpaceOnUse">
+				<stop offset="54%" stop-color="#d6b849" />
+				<stop offset="67%" stop-color="#ffce47" />
+				<stop offset="100%" stop-color="#ffdb73" />
+			</radialGradient>
+			<radialGradient id="sun-winter-glow-grad" cx="45" cy="2" r="42" gradientUnits="userSpaceOnUse">
+				<stop offset="54%" stop-color="#d6b849" />
+				<stop offset="67%" stop-color="#ffce47" />
+				<stop offset="100%" stop-color="#ffdb73" />
+			</radialGradient>
+		</defs>
+		<symbol id="sun">
+			<path class="sun-glow" fill="url(#sun-glow-grad)" d="M66.64,47.86,82,41,66.64,34.12l9.84-13.66L59.76,22.22,61.46,5.47l-13.6,9.89L41,0,34.12,15.36,20.46,5.52l1.76,16.72L5.47,20.54l9.89,13.6L0,41l15.36,6.83L5.52,61.54l16.72-1.76L20.54,76.53l13.6-9.89L41,82l6.83-15.36,13.66,9.84L59.78,59.76l16.75,1.69Z"></path>
+			<path class="sun-outer" fill="#ffd348" d="M19.28,53.5a25,25,0,1,0,9.15-34.16A25,25,0,0,0,19.28,53.5Z"></path>
+			<path class="sun-inner" fill="url(#sun-inner-grad)" d="M22.74,51.5a21,21,0,1,0,7.69-28.69A21,21,0,0,0,22.74,51.5Z"></path>
+		</symbol>
+
+		<defs>
+			<mask id="sunWinterMask">
+				<rect x="0" y="0" width="100" height="100" fill="white"></rect>
+			</mask>
+		</defs>
+		<symbol id="sunWinter">
+			<g mask="url(#sunWinterMask)">
+				<use class="sun-primitive" xlink:href="#sun" x="0" y="0" width="100" height="100" transform="translate(4,-40) scale(1,1)"></use>
+			</g>
+			<path fill="#333333" d="M88.29,2.7H1.71A1.56,1.56,0,0,1,0,1.35,1.56,1.56,0,0,1,1.71,0H88.29A1.56,1.56,0,0,1,90,1.35,1.56,1.56,0,0,1,88.29,2.7Z"></path>
+		</symbol>
+
+		<defs>
+
+			<mask id="lightning_37_51_1_1_4">
+				<rect x="0" y="0" width="100" height="100" fill="white"></rect>
+				<use xlink:href="#lightning" fill="black" stroke="black" stroke-linejoin="round" stroke-width="8" x="0" y="0" width="100" height="100" transform="translate(37,51) scale(1,1)"></use>
+			</mask>
+
+			<mask id="cloud_43_37_063_063_5">
+				<rect x="0" y="0" width="100" height="100" fill="white"></rect>
+				<use xlink:href="#cloud" fill="black" stroke="black" stroke-linejoin="round" stroke-width="10" x="0" y="0" width="100" height="100" transform="translate(43,37) scale(0.63,0.63)"></use>
+			</mask>
+
+			<mask id="cloud_3_18_1_1_5">
+				<rect x="0" y="0" width="100" height="100" fill="white"></rect>
+				<use xlink:href="#cloud" fill="black" stroke="black" stroke-linejoin="round" stroke-width="10" x="0" y="0" width="100" height="100" transform="translate(3,18) scale(1,1)"></use>
+			</mask>
+		</defs>
+
+		<symbol id="s10">
+			<use xlink:href="#cloud" fill="#999999" x="0" y="0" width="100" height="100" transform="translate(3,18) scale(1,1)"></use>
+			<use xlink:href="#raindrop" x="0" y="0" width="100" height="100" transform="translate(18,78) scale(1,1)"></use>
+			<use xlink:href="#raindrop" x="0" y="0" width="100" height="100" transform="translate(32,87) scale(1,1)"></use>
+			<use xlink:href="#raindrop" x="0" y="0" width="100" height="100" transform="translate(47,79) scale(1,1)"></use>
+			<use xlink:href="#raindrop" x="0" y="0" width="100" height="100" transform="translate(60,78) scale(1,1)"></use>
+			<use xlink:href="#raindrop" x="0" y="0" width="100" height="100" transform="translate(74,87) scale(1,1)"></use>
+		</symbol>
+		<symbol id="s11">
+			<g mask="url(#lightning_37_51_1_1_4)">
+				<use xlink:href="#cloud" fill="#999999" x="0" y="0" width="100" height="100" transform="translate(3,18) scale(1,1)"></use>
+			</g>
+			<use xlink:href="#lightning" x="0" y="0" width="100" height="100" transform="translate(37,51) scale(1,1)"></use>
+			<use xlink:href="#raindrop" x="0" y="0" width="100" height="100" transform="translate(18,78) scale(1,1)"></use>
+			<use xlink:href="#raindrop" x="0" y="0" width="100" height="100" transform="translate(29,87) scale(1,1)"></use>
+			<use xlink:href="#raindrop" x="0" y="0" width="100" height="100" transform="translate(55,79) scale(1,1)"></use>
+			<use xlink:href="#raindrop" x="0" y="0" width="100" height="100" transform="translate(68,78) scale(1,1)"></use>
+			<use xlink:href="#raindrop" x="0" y="0" width="100" height="100" transform="translate(82,87) scale(1,1)"></use>
+		</symbol>
+		<symbol id="s12">
+			<use xlink:href="#cloud" fill="#b2b2b2" x="0" y="0" width="100" height="100" transform="translate(3,18) scale(1,1)"></use>
+			<use xlink:href="#snowflake" x="0" y="0" width="100" height="100" transform="translate(30,79) scale(1,1)"></use>
+			<use xlink:href="#raindrop" x="0" y="0" width="100" height="100" transform="translate(46,86) scale(1,1)"></use>
+			<use xlink:href="#raindrop" x="0" y="0" width="100" height="100" transform="translate(60,80) scale(1,1)"></use>
+		</symbol>
+		<symbol id="s13">
+			<use xlink:href="#cloud" fill="#b2b2b2" x="0" y="0" width="100" height="100" transform="translate(3,18) scale(1,1)"></use>
+			<use xlink:href="#snowflake" x="0" y="0" width="100" height="100" transform="translate(30,79) scale(1,1)"></use>
+			<use xlink:href="#snowflake" x="0" y="0" width="100" height="100" transform="translate(44,88) scale(1,1)"></use>
+			<use xlink:href="#snowflake" x="0" y="0" width="100" height="100" transform="translate(58,79) scale(1,1)"></use>
+		</symbol>
+		<symbol id="s14">
+			<g mask="url(#lightning_37_51_1_1_4)">
+				<use xlink:href="#cloud" fill="#b2b2b2" x="0" y="0" width="100" height="100" transform="translate(3,18) scale(1,1)"></use>
+			</g>
+			<use xlink:href="#lightning" x="0" y="0" width="100" height="100" transform="translate(37,51) scale(1,1)"></use>
+			<use xlink:href="#snowflake" x="0" y="0" width="100" height="100" transform="translate(26,79) scale(1,1)"></use>
+			<use xlink:href="#snowflake" x="0" y="0" width="100" height="100" transform="translate(52,88) scale(1,1)"></use>
+			<use xlink:href="#snowflake" x="0" y="0" width="100" height="100" transform="translate(66,79) scale(1,1)"></use>
+		</symbol>
+		<symbol id="s15">
+			<use xlink:href="#cloud" fill="#dddddd" x="0" y="0" width="100" height="100" transform="translate(3,18) scale(1,1)"></use>
+			<use xlink:href="#fog" x="0" y="0" width="100" height="100" transform="translate(0,76) scale(1,1)"></use>
+		</symbol>
+		<symbol id="s22">
+			<g mask="url(#lightning_37_51_1_1_4)">
+				<use xlink:href="#cloud" fill="#b2b2b2" x="0" y="0" width="100" height="100" transform="translate(3,18) scale(1,1)"></use>
+			</g>
+			<use xlink:href="#lightning" x="0" y="0" width="100" height="100" transform="translate(37,51) scale(1,1)"></use>
+			<use xlink:href="#raindrop" x="0" y="0" width="100" height="100" transform="translate(29,78) scale(1,1)"></use>
+			<use xlink:href="#raindrop" x="0" y="0" width="100" height="100" transform="translate(50,87) scale(1,1)"></use>
+			<use xlink:href="#raindrop" x="0" y="0" width="100" height="100" transform="translate(65,78) scale(1,1)"></use>
+		</symbol>
+		<symbol id="s23">
+			<g mask="url(#lightning_37_51_1_1_4)">
+				<use xlink:href="#cloud" fill="#b2b2b2" x="0" y="0" width="100" height="100" transform="translate(3,18) scale(1,1)"></use>
+			</g>
+			<use xlink:href="#lightning" x="0" y="0" width="100" height="100" transform="translate(37,51) scale(1,1)"></use>
+			<use xlink:href="#snowflake" x="0" y="0" width="100" height="100" transform="translate(27,79) scale(1,1)"></use>
+			<use xlink:href="#raindrop" x="0" y="0" width="100" height="100" transform="translate(50,86) scale(1,1)"></use>
+			<use xlink:href="#raindrop" x="0" y="0" width="100" height="100" transform="translate(64,80) scale(1,1)"></use>
+		</symbol>
+		<symbol id="s30">
+			<g mask="url(#lightning_37_51_1_1_4)">
+				<use xlink:href="#cloud" fill="#cccccc" x="0" y="0" width="100" height="100" transform="translate(3,18) scale(1,1)"></use>
+			</g>
+			<use xlink:href="#lightning" x="0" y="0" width="100" height="100" transform="translate(37,51) scale(1,1)"></use>
+			<use xlink:href="#raindrop" x="0" y="0" width="100" height="100" transform="translate(28,87) scale(1,1)"></use>
+			<use xlink:href="#raindrop" x="0" y="0" width="100" height="100" transform="translate(58,78) scale(1,1)"></use>
+		</symbol>
+		<symbol id="s31">
+			<g mask="url(#lightning_37_51_1_1_4)">
+				<use xlink:href="#cloud" fill="#cccccc" x="0" y="0" width="100" height="100" transform="translate(3,18) scale(1,1)"></use>
+			</g>
+			<use xlink:href="#lightning" x="0" y="0" width="100" height="100" transform="translate(37,51) scale(1,1)"></use>
+			<use xlink:href="#snowflake" x="0" y="0" width="100" height="100" transform="translate(26,88) scale(1,1)"></use>
+			<use xlink:href="#raindrop" x="0" y="0" width="100" height="100" transform="translate(58,79) scale(1,1)"></use>
+		</symbol>
+		<symbol id="s32">
+			<g mask="url(#lightning_37_51_1_1_4)">
+				<use xlink:href="#cloud" fill="#999999" x="0" y="0" width="100" height="100" transform="translate(3,18) scale(1,1)"></use>
+			</g>
+			<use xlink:href="#lightning" x="0" y="0" width="100" height="100" transform="translate(37,51) scale(1,1)"></use>
+			<use xlink:href="#snowflake" x="0" y="0" width="100" height="100" transform="translate(15,79) scale(1,1)"></use>
+			<use xlink:href="#raindrop" x="0" y="0" width="100" height="100" transform="translate(30,86) scale(1,1)"></use>
+			<use xlink:href="#raindrop" x="0" y="0" width="100" height="100" transform="translate(55,80) scale(1,1)"></use>
+			<use xlink:href="#snowflake" x="0" y="0" width="100" height="100" transform="translate(66,88) scale(1,1)"></use>
+			<use xlink:href="#raindrop" x="0" y="0" width="100" height="100" transform="translate(82,80) scale(1,1)"></use>
+		</symbol>
+		<symbol id="s33">
+			<g mask="url(#lightning_37_51_1_1_4)">
+				<use xlink:href="#cloud" fill="#cccccc" x="0" y="0" width="100" height="100" transform="translate(3,18) scale(1,1)"></use>
+			</g>
+			<use xlink:href="#lightning" x="0" y="0" width="100" height="100" transform="translate(37,51) scale(1,1)"></use>
+			<use xlink:href="#snowflake" x="0" y="0" width="100" height="100" transform="translate(26,88) scale(1,1)"></use>
+			<use xlink:href="#snowflake" x="0" y="0" width="100" height="100" transform="translate(58,79) scale(1,1)"></use>
+		</symbol>
+		<symbol id="s34">
+			<g mask="url(#lightning_37_51_1_1_4)">
+				<use xlink:href="#cloud" fill="#999999" x="0" y="0" width="100" height="100" transform="translate(3,18) scale(1,1)"></use>
+			</g>
+			<use xlink:href="#lightning" x="0" y="0" width="100" height="100" transform="translate(37,51) scale(1,1)"></use>
+			<use xlink:href="#snowflake" x="0" y="0" width="100" height="100" transform="translate(13,79) scale(1,1)"></use>
+			<use xlink:href="#snowflake" x="0" y="0" width="100" height="100" transform="translate(27,88) scale(1,1)"></use>
+			<use xlink:href="#snowflake" x="0" y="0" width="100" height="100" transform="translate(55,79) scale(1,1)"></use>
+			<use xlink:href="#snowflake" x="0" y="0" width="100" height="100" transform="translate(69,88) scale(1,1)"></use>
+			<use xlink:href="#snowflake" x="0" y="0" width="100" height="100" transform="translate(83,79) scale(1,1)"></use>
+		</symbol>
+		<symbol id="s46">
+			<use xlink:href="#cloud" fill="#cccccc" x="0" y="0" width="100" height="100" transform="translate(3,18) scale(1,1)"></use>
+			<use xlink:href="#raindrop" x="0" y="0" width="100" height="100" transform="translate(32,87) scale(1,1)"></use>
+			<use xlink:href="#raindrop" x="0" y="0" width="100" height="100" transform="translate(56,78) scale(1,1)"></use>
+		</symbol>
+		<symbol id="s47">
+			<use xlink:href="#cloud" fill="#cccccc" x="0" y="0" width="100" height="100" transform="translate(3,18) scale(1,1)"></use>
+			<use xlink:href="#snowflake" x="0" y="0" width="100" height="100" transform="translate(29,88) scale(1,1)"></use>
+			<use xlink:href="#raindrop" x="0" y="0" width="100" height="100" transform="translate(60,79) scale(1,1)"></use>
+		</symbol>
+		<symbol id="s48">
+			<use xlink:href="#cloud" fill="#999999" x="0" y="0" width="100" height="100" transform="translate(3,18) scale(1,1)"></use>
+			<use xlink:href="#snowflake" x="0" y="0" width="100" height="100" transform="translate(15,79) scale(1,1)"></use>
+			<use xlink:href="#raindrop" x="0" y="0" width="100" height="100" transform="translate(32,86) scale(1,1)"></use>
+			<use xlink:href="#raindrop" x="0" y="0" width="100" height="100" transform="translate(47,80) scale(1,1)"></use>
+			<use xlink:href="#snowflake" x="0" y="0" width="100" height="100" transform="translate(58,88) scale(1,1)"></use>
+			<use xlink:href="#raindrop" x="0" y="0" width="100" height="100" transform="translate(74,80) scale(1,1)"></use>
+		</symbol>
+		<symbol id="s49">
+			<use xlink:href="#cloud" fill="#cccccc" x="0" y="0" width="100" height="100" transform="translate(3,18) scale(1,1)"></use>
+			<use xlink:href="#snowflake" x="0" y="0" width="100" height="100" transform="translate(29,88) scale(1,1)"></use>
+			<use xlink:href="#snowflake" x="0" y="0" width="100" height="100" transform="translate(58,79) scale(1,1)"></use>
+		</symbol>
+		<symbol id="s50">
+			<use xlink:href="#cloud" fill="#999999" x="0" y="0" width="100" height="100" transform="translate(3,18) scale(1,1)"></use>
+			<use xlink:href="#snowflake" x="0" y="0" width="100" height="100" transform="translate(15,79) scale(1,1)"></use>
+			<use xlink:href="#snowflake" x="0" y="0" width="100" height="100" transform="translate(29,88) scale(1,1)"></use>
+			<use xlink:href="#snowflake" x="0" y="0" width="100" height="100" transform="translate(44,79) scale(1,1)"></use>
+			<use xlink:href="#snowflake" x="0" y="0" width="100" height="100" transform="translate(58,88) scale(1,1)"></use>
+			<use xlink:href="#snowflake" x="0" y="0" width="100" height="100" transform="translate(72,79) scale(1,1)"></use>
+		</symbol>
+		<symbol id="s04">
+			<use xlink:href="#cloud" fill="#dddddd" x="0" y="0" width="100" height="100" transform="translate(3,18) scale(1,1)"></use>
+		</symbol>
+		<symbol id="s09">
+			<use xlink:href="#cloud" fill="#b2b2b2" x="0" y="0" width="100" height="100" transform="translate(3,18) scale(1,1)"></use>
+			<use xlink:href="#raindrop" x="0" y="0" width="100" height="100" transform="translate(32,78) scale(1,1)"></use>
+			<use xlink:href="#raindrop" x="0" y="0" width="100" height="100" transform="translate(45,87) scale(1,1)"></use>
+			<use xlink:href="#raindrop" x="0" y="0" width="100" height="100" transform="translate(60,78) scale(1,1)"></use>
+		</symbol>
+		<symbol id="s01d">
+			<use xlink:href="#sun" x="0" y="0" width="100" height="100" transform="translate(9,9) scale(1,1)"></use>
+		</symbol>
+		<symbol id="s02d">
+			<g mask="url(#cloud_43_37_063_063_5)">
+				<use xlink:href="#sun" x="0" y="0" width="100" height="100" transform="translate(4,9) scale(1,1)"></use>
+			</g>
+			<use xlink:href="#cloud" fill="#dddddd" x="0" y="0" width="100" height="100" transform="translate(43,37) scale(0.63,0.63)"></use>
+		</symbol>
+		<symbol id="s03d">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#sun" x="0" y="0" width="100" height="100" transform="translate(0,2) scale(0.7,0.7)"></use>
+			</g>
+			<use xlink:href="#s04" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s40d">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#sun" x="0" y="0" width="100" height="100" transform="translate(0,2) scale(0.7,0.7)"></use>
+			</g>
+			<use xlink:href="#s46" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s05d">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#sun" x="0" y="0" width="100" height="100" transform="translate(0,2) scale(0.7,0.7)"></use>
+			</g>
+			<use xlink:href="#s09" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s41d">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#sun" x="0" y="0" width="100" height="100" transform="translate(0,2) scale(0.7,0.7)"></use>
+			</g>
+			<use xlink:href="#s10" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s42d">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#sun" x="0" y="0" width="100" height="100" transform="translate(0,2) scale(0.7,0.7)"></use>
+			</g>
+			<use xlink:href="#s47" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s07d">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#sun" x="0" y="0" width="100" height="100" transform="translate(0,2) scale(0.7,0.7)"></use>
+			</g>
+			<use xlink:href="#s12" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s43d">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#sun" x="0" y="0" width="100" height="100" transform="translate(0,2) scale(0.7,0.7)"></use>
+			</g>
+			<use xlink:href="#s48" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s44d">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#sun" x="0" y="0" width="100" height="100" transform="translate(0,2) scale(0.7,0.7)"></use>
+			</g>
+			<use xlink:href="#s49" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s08d">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#sun" x="0" y="0" width="100" height="100" transform="translate(0,2) scale(0.7,0.7)"></use>
+			</g>
+			<use xlink:href="#s13" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s45d">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#sun" x="0" y="0" width="100" height="100" transform="translate(0,2) scale(0.7,0.7)"></use>
+			</g>
+			<use xlink:href="#s50" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s24d">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#sun" x="0" y="0" width="100" height="100" transform="translate(0,2) scale(0.7,0.7)"></use>
+			</g>
+			<use xlink:href="#s30" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s06d">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#sun" x="0" y="0" width="100" height="100" transform="translate(0,2) scale(0.7,0.7)"></use>
+			</g>
+			<use xlink:href="#s22" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s25d">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#sun" x="0" y="0" width="100" height="100" transform="translate(0,2) scale(0.7,0.7)"></use>
+			</g>
+			<use xlink:href="#s11" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s26d">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#sun" x="0" y="0" width="100" height="100" transform="translate(0,2) scale(0.7,0.7)"></use>
+			</g>
+			<use xlink:href="#s31" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s20d">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#sun" x="0" y="0" width="100" height="100" transform="translate(0,2) scale(0.7,0.7)"></use>
+			</g>
+			<use xlink:href="#s23" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s27d">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#sun" x="0" y="0" width="100" height="100" transform="translate(0,2) scale(0.7,0.7)"></use>
+			</g>
+			<use xlink:href="#s32" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s28d">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#sun" x="0" y="0" width="100" height="100" transform="translate(0,2) scale(0.7,0.7)"></use>
+			</g>
+			<use xlink:href="#s33" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s21d">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#sun" x="0" y="0" width="100" height="100" transform="translate(0,2) scale(0.7,0.7)"></use>
+			</g>
+			<use xlink:href="#s14" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s29d">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#sun" x="0" y="0" width="100" height="100" transform="translate(0,2) scale(0.7,0.7)"></use>
+			</g>
+			<use xlink:href="#s34" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s01n">
+			<use xlink:href="#moon" x="0" y="0" width="100" height="100" transform="translate(20,20) scale(1,1)"></use>
+		</symbol>
+		<symbol id="s02n">
+			<g mask="url(#cloud_43_37_063_063_5)">
+				<use xlink:href="#moon" x="0" y="0" width="100" height="100" transform="translate(15,20) scale(1,1)"></use>
+			</g>
+			<use xlink:href="#cloud" fill="#dddddd" x="0" y="0" width="100" height="100" transform="translate(43,37) scale(0.63,0.63)"></use>
+		</symbol>
+		<symbol id="s03n">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#moon" x="0" y="0" width="100" height="100" transform="translate(2,5) scale(0.714285714,0.714285714)"></use>
+			</g>
+			<use xlink:href="#s04" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s40n">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#moon" x="0" y="0" width="100" height="100" transform="translate(2,5) scale(0.714285714,0.714285714)"></use>
+			</g>
+			<use xlink:href="#s46" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s05n">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#moon" x="0" y="0" width="100" height="100" transform="translate(2,5) scale(0.714285714,0.714285714)"></use>
+			</g>
+			<use xlink:href="#s09" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s41n">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#moon" x="0" y="0" width="100" height="100" transform="translate(2,5) scale(0.714285714,0.714285714)"></use>
+			</g>
+			<use xlink:href="#s10" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s42n">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#moon" x="0" y="0" width="100" height="100" transform="translate(2,5) scale(0.714285714,0.714285714)"></use>
+			</g>
+			<use xlink:href="#s47" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s07n">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#moon" x="0" y="0" width="100" height="100" transform="translate(2,5) scale(0.714285714,0.714285714)"></use>
+			</g>
+			<use xlink:href="#s12" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s43n">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#moon" x="0" y="0" width="100" height="100" transform="translate(2,5) scale(0.714285714,0.714285714)"></use>
+			</g>
+			<use xlink:href="#s48" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s44n">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#moon" x="0" y="0" width="100" height="100" transform="translate(2,5) scale(0.714285714,0.714285714)"></use>
+			</g>
+			<use xlink:href="#s49" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s08n">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#moon" x="0" y="0" width="100" height="100" transform="translate(2,5) scale(0.714285714,0.714285714)"></use>
+			</g>
+			<use xlink:href="#s13" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s45n">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#moon" x="0" y="0" width="100" height="100" transform="translate(2,5) scale(0.714285714,0.714285714)"></use>
+			</g>
+			<use xlink:href="#s50" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s24n">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#moon" x="0" y="0" width="100" height="100" transform="translate(2,5) scale(0.714285714,0.714285714)"></use>
+			</g>
+			<use xlink:href="#s30" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s06n">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#moon" x="0" y="0" width="100" height="100" transform="translate(2,5) scale(0.714285714,0.714285714)"></use>
+			</g>
+			<use xlink:href="#s22" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s25n">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#moon" x="0" y="0" width="100" height="100" transform="translate(2,5) scale(0.714285714,0.714285714)"></use>
+			</g>
+			<use xlink:href="#s11" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s26n">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#moon" x="0" y="0" width="100" height="100" transform="translate(2,5) scale(0.714285714,0.714285714)"></use>
+			</g>
+			<use xlink:href="#s31" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s20n">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#moon" x="0" y="0" width="100" height="100" transform="translate(2,5) scale(0.714285714,0.714285714)"></use>
+			</g>
+			<use xlink:href="#s23" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s27n">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#moon" x="0" y="0" width="100" height="100" transform="translate(2,5) scale(0.714285714,0.714285714)"></use>
+			</g>
+			<use xlink:href="#s32" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s28n">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#moon" x="0" y="0" width="100" height="100" transform="translate(2,5) scale(0.714285714,0.714285714)"></use>
+			</g>
+			<use xlink:href="#s33" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s21n">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#moon" x="0" y="0" width="100" height="100" transform="translate(2,5) scale(0.714285714,0.714285714)"></use>
+			</g>
+			<use xlink:href="#s14" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s29n">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#moon" x="0" y="0" width="100" height="100" transform="translate(2,5) scale(0.714285714,0.714285714)"></use>
+			</g>
+			<use xlink:href="#s34" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s01m">
+			<use xlink:href="#sunWinter" x="0" y="0" width="100" height="100" transform="translate(5,37) scale(1,1)"></use>
+		</symbol>
+		<symbol id="s02m">
+			<g mask="url(#cloud_43_37_063_063_5)">
+				<use xlink:href="#sunWinter" x="0" y="0" width="100" height="100" transform="translate(0,37) scale(1,1)"></use>
+			</g>
+			<use xlink:href="#cloud" fill="#dddddd" x="0" y="0" width="100" height="100" transform="translate(43,37) scale(0.63,0.63)"></use>
+		</symbol>
+		<symbol id="s03m">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#sunWinter" x="0" y="0" width="100" height="100" transform="translate(0,19) scale(0.7,0.7)"></use>
+			</g>
+			<use xlink:href="#s04" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s40m">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#sunWinter" x="0" y="0" width="100" height="100" transform="translate(0,19) scale(0.7,0.7)"></use>
+			</g>
+			<use xlink:href="#s46" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s05m">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#sunWinter" x="0" y="0" width="100" height="100" transform="translate(0,19) scale(0.7,0.7)"></use>
+			</g>
+			<use xlink:href="#s09" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s41m">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#sunWinter" x="0" y="0" width="100" height="100" transform="translate(0,19) scale(0.7,0.7)"></use>
+			</g>
+			<use xlink:href="#s10" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s42m">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#sunWinter" x="0" y="0" width="100" height="100" transform="translate(0,19) scale(0.7,0.7)"></use>
+			</g>
+			<use xlink:href="#s47" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s07m">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#sunWinter" x="0" y="0" width="100" height="100" transform="translate(0,19) scale(0.7,0.7)"></use>
+			</g>
+			<use xlink:href="#s12" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s43m">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#sunWinter" x="0" y="0" width="100" height="100" transform="translate(0,19) scale(0.7,0.7)"></use>
+			</g>
+			<use xlink:href="#s48" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s44m">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#sunWinter" x="0" y="0" width="100" height="100" transform="translate(0,19) scale(0.7,0.7)"></use>
+			</g>
+			<use xlink:href="#s49" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s08m">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#sunWinter" x="0" y="0" width="100" height="100" transform="translate(0,19) scale(0.7,0.7)"></use>
+			</g>
+			<use xlink:href="#s13" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s45m">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#sunWinter" x="0" y="0" width="100" height="100" transform="translate(0,19) scale(0.7,0.7)"></use>
+			</g>
+			<use xlink:href="#s50" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s24m">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#sunWinter" x="0" y="0" width="100" height="100" transform="translate(0,19) scale(0.7,0.7)"></use>
+			</g>
+			<use xlink:href="#s30" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s06m">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#sunWinter" x="0" y="0" width="100" height="100" transform="translate(0,19) scale(0.7,0.7)"></use>
+			</g>
+			<use xlink:href="#s22" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s25m">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#sunWinter" x="0" y="0" width="100" height="100" transform="translate(0,19) scale(0.7,0.7)"></use>
+			</g>
+			<use xlink:href="#s11" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s26m">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#sunWinter" x="0" y="0" width="100" height="100" transform="translate(0,19) scale(0.7,0.7)"></use>
+			</g>
+			<use xlink:href="#s31" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s20m">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#sunWinter" x="0" y="0" width="100" height="100" transform="translate(0,19) scale(0.7,0.7)"></use>
+			</g>
+			<use xlink:href="#s23" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s27m">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#sunWinter" x="0" y="0" width="100" height="100" transform="translate(0,19) scale(0.7,0.7)"></use>
+			</g>
+			<use xlink:href="#s32" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s28m">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#sunWinter" x="0" y="0" width="100" height="100" transform="translate(0,19) scale(0.7,0.7)"></use>
+			</g>
+			<use xlink:href="#s33" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s21m">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#sunWinter" x="0" y="0" width="100" height="100" transform="translate(0,19) scale(0.7,0.7)"></use>
+			</g>
+			<use xlink:href="#s14" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+		<symbol id="s29m">
+			<g mask="url(#cloud_3_18_1_1_5)">
+				<use xlink:href="#sunWinter" x="0" y="0" width="100" height="100" transform="translate(0,19) scale(0.7,0.7)"></use>
+			</g>
+			<use xlink:href="#s34" x="0" y="0" width="100" height="100"></use>
+		</symbol>
+	</svg>
+	<div class="yr-page">
+		
+				<svg id="iconDefs" height="0" width="0" style="position:absolute;" aria-hidden="true">
+					<symbol id="icon-user">
+						<path d="M50,49.81a16,16,0,1,1,16.13-16A16.1,16.1,0,0,1,50,49.81Zm0-28.05a12,12,0,1,0,12.13,12A12.09,12.09,0,0,0,50,21.76Z" fill="currentColor"></path>
+						<path d="M76.5,82.24h-53a2,2,0,0,1-2-2,28.5,28.5,0,0,1,57,0A2,2,0,0,1,76.5,82.24Zm-50.92-4H74.42a24.52,24.52,0,0,0-48.84,0Z" fill="currentColor"></path>
+					  </symbol>
+				</svg>
+				<header class="page-header" id="pageHeader" role="banner">
+					<div id="ctl00_ctl00_ctl00_mobileSiteLink" class="settings-container">
+						<span><a href=https://www.yr.no/nb>Mobilversjon</a></span>
+						<div class="yr-language-switcher">
+  <span>Språk / Language</span>
+  <img src="https://www.yr.no/assets/images/100/icon-down.png" width="13" />
+  <ul>
+    <li>
+      <ul>
+        <li>
+          <a href="/_/settspr.aspx?spr=nno&amp;redir=%2fstad%2fSverige%2fStockholm%2fStockholm%2f" title="Nynorsk" rel="alternate nofollow">Nynorsk</a>
+        </li>
+        <li>
+          <a href="/_/settspr.aspx?spr=fkv&amp;redir=%2fpaikka%2fRuotti%2fStockholm%2fTukholma%2f" title="Kvääni" rel="alternate nofollow">Kvääni</a>
+        </li>
+        <li>
+          <a href="/_/settspr.aspx?spr=sme&amp;redir=%2fsadji%2fRuo%c5%a7%c5%a7a%2fStockholm%2fStockholm%2f" title="Davvisámegiella" rel="alternate nofollow">Davvisámegiella</a>
+        </li>
+        <li>
+          <a href="/_/settspr.aspx?spr=eng&amp;redir=%2fplace%2fSweden%2fStockholm%2fStockholm%2f" title="English" rel="alternate nofollow">English</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+					</div>
+					<div class="layout-container">
+						<a href="/" class="logo" tabindex="0"">
+							<img src="https://www.yr.no/assets/images/logo-yr-50.png" width="42" title="Til forsiden på Yr" />
+						</a>
+						<nav id="pageHeaderNav" role="navigation">
+							<div id="ctl00_ctl00_ctl00_location_search_form" class="location-search">
+								<form action="/soek/soek.aspx" autocomplete="off" id="locationSearchForm" method="get">
+									<label for="sted">Søk blant værvarsel i Norge og verden</label>
+									<input aria-controls="suggestionsPanel" autocapitalize="off" autocomplete="off" autocorrect="off" id="sted" name="sted" placeholder="Søk etter sted..." spellcheck="false" type="search">
+									<div id="yr-autosuggest" style="display: none">
+  <table>
+    <tfoot>
+      <tr>
+        <td>
+          <a id="fb_seFlere" href="" title="Se flere søkeresultater">Se flere søkeresultater</a>
+        </td>
+        <td>
+          <a id="fb_lukk" href="" title="Lukk">Lukk</a>
+        </td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr>
+        <td>
+          <a href="" title="">
+            <strong>&lt;stedsnavn&gt;</strong>
+            <span>&lt;Type&gt; i &lt;kommune&gt;, &lt;område&gt;</span>
+          </a>
+        </td>
+        <td class="flag">
+          <img src="/grafikk/ikon/flags/h14/NO.png" alt="" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="" title="">
+            <strong>&lt;stedsnavn&gt;</strong>
+            <span>&lt;Type&gt; i &lt;kommune&gt;, &lt;område&gt;</span>
+          </a>
+        </td>
+        <td class="flag">
+          <img src="/grafikk/ikon/flags/h14/NO.png" alt="" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="" title="">
+            <strong>&lt;stedsnavn&gt;</strong>
+            <span>&lt;Type&gt; i &lt;kommune&gt;, &lt;område&gt;</span>
+          </a>
+        </td>
+        <td class="flag">
+          <img src="/grafikk/ikon/flags/h14/NO.png" alt="" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="" title="">
+            <strong>&lt;stedsnavn&gt;</strong>
+            <span>&lt;Type&gt; i &lt;kommune&gt;, &lt;område&gt;</span>
+          </a>
+        </td>
+        <td class="flag">
+          <img src="/grafikk/ikon/flags/h14/NO.png" alt="" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="" title="">
+            <strong>&lt;stedsnavn&gt;</strong>
+            <span>&lt;Type&gt; i &lt;kommune&gt;, &lt;område&gt;</span>
+          </a>
+        </td>
+        <td class="flag">
+          <img src="/grafikk/ikon/flags/h14/NO.png" alt="" />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+									<button class="button button--icon" id="queryknapp" title="Søk" type="submit">
+										<span class="label">Søk</span>
+										<span class="icon-search">
+											<img src="https://www.yr.no/assets/images/100/icon-search.png" width="25" />
+										</span>
+									</button>
+								</form>
+							</div>
+							<a class="advanced-search" href="/sok/">
+  <span>Avansert søk</span>
+</a>
+							<button class="button button--chromeless settings" onclick="window.location.href='/mine_stader/time_for_time.html'">
+								<span class="icon-star">
+									<img src="https://www.yr.no/assets/images/100/icon-star.png" width="20" />
+								</span>
+								<span class="label">Mine steder</span>
+							</button>
+						</nav>
+					</div>
+				</header>
+		<div class="yr-breadcrumbs lp_breadcrumbs">
+  <div class="yr-breadcrumbs-body">
+    <ul>
+      <li>
+        <a href="/" title="">Forsiden</a>
+        <ul>
+          <li>
+            <a href="/sted/Sverige/" title="Sverige">Sverige</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="/sted/Sverige/Stockholm/" title="Stockholm">Stockholm</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <span>Stockholm</span>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+		<div class="yr-content">
+			
+			
+
+			
+			<div id="ctl00_ctl00_contentBody" class="yr-content-body">
+				
+				
+    <div class="yr-content-title clearfix">
+  <h1>Værvarsel for <span><strong>Stockholm</strong> (Sverige)</span></h1>
+  <div id="yr-timestamp-tools">
+    <div id="yr-timestamp">
+      <p>
+        <a href="#" id="yr-last-updated">Sist oppdatert kl 4:26. <strong>Ny oppdatering ca. kl 12:00</strong></a>
+      </p>
+      <div id="yr-timestamp-info" style="display: none;">
+        <table>
+          <caption>Stockholm-varselet er utstedt på disse tidspunktene:</caption>
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Utstedt</th>
+              <th scope="col">Blir normalt oppdatert</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Korttidsvarsel</td>
+              <td>03 jun. kl 04:26</td>
+              <td>innen kl. 12:00</td>
+            </tr>
+            <tr>
+              <td>Langtidsvarsel</td>
+              <td>02 jun. kl 21:38</td>
+              <td>innen kl. 21:00</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Korttidsvarselet gjelder til tirsdag kl 20.
+</p>
+      </div>
+    </div>
+    <div class="yr-tools">
+      <div class="yr-setfaves">
+        <a title="" href="" class="yr-icon yr-icon-my-favourite" id="settFavoritt" style="display: none">Legg til mine steder</a>
+        <a title="" href="" class="yr-icon yr-icon-my-favourite" id="fjernFavoritt" style="display: none">Fjern fra mine steder</a>
+      </div>
+      <a title="PDF" href="varsel.pdf" class="yr-icon yr-icon-print">Værvarsel som<br />PDF</a>
+    </div>
+  </div>
+</div>
+	<div class="yr-content-body yr-top-margin yr-content-stickynav clearfix">
+		
+		
+		
+
+       
+     
+
+		<div class="yr-stickynav lp_leftmenu">
+			<div class="yr-stickynav-body">
+				<div class="yr-stickynav-menu">					
+					<ul>
+  <li class="selected">
+    <a href="./" class="yr-icon yr-icon-overview">Oversikt</a>
+  </li>
+  <li>
+    <a href="time_for_time.html" class="yr-icon yr-icon-hourly">Time for time</a>
+  </li>
+  <li>
+    <a href="langtidsvarsel.html" class="yr-icon yr-icon-longterm">Langtidsvarsel</a>
+  </li>
+  <li>
+    <a href="statistikk.html" class="yr-icon yr-icon-stats">Været som var</a>
+  </li>
+  <li class="related">
+    <a href="/kart/" id="embeddedmaplink" class="yr-icon yr-icon-maps">Kart</a>
+  </li>
+</ul>
+				</div>
+				<div class="yr-stickynav-list">
+				</div>
+			</div>
+		</div>
+		
+	<div class="yr-content-stickynav-three-fifths left lp_cleft">
+		<table class="yr-table yr-table-overview2 yr-popup-area" summary="">
+  <caption>
+    <strong>I dag, </strong>søndag 03.06.2018</caption>
+  <colgroup width="60"></colgroup>
+  <colgroup width="50"></colgroup>
+  <colgroup width="50"></colgroup>
+  <colgroup width="80"></colgroup>
+  <colgroup></colgroup>
+  <thead>
+    <tr>
+      <th scope="col">Tid</th>
+      <th scope="col">Varsel</th>
+      <th scope="col">
+        <abbr title="Temperatur">Temp.</abbr>
+      </th>
+      <th scope="col">Nedbør</th>
+      <th scope="col">Vind</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <abbr title="klokken">kl</abbr> 10–12</td>
+      <td title="Klarvær. Gjelder for: kl 10–12">
+        <figure>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 100 100" width="38" height="38" aria-hidden="true">
+            <use x="0" y="0" width="100" height="100" xlink:href="#s01d" xmlns=""></use>
+            <image alt="Klarvær.  " src="/grafikk/sym/v2017/png/38/01d.png" width="38" height="38" xmlns="" />
+          </svg>
+          <figcaption class="yr-visually-hidden">Klarvær.</figcaption>
+        </figure>
+      </td>
+      <td class="temperature plus" title="Temperatur: 25°.  Følt temperatur 25°.  Gjelder for: kl 10">25°</td>
+      <td title="Nedbør: 0 mm.  Gjelder for: kl 10–12.  ">0 mm</td>
+      <td class="txt-left" title="Flau vind, 1 m/s fra øst.  Gjelder for: kl 10">
+        <img src="/grafikk/sym/vindpiler/32/vindpil.0000.085.png" class="wind" alt="Flau vind, 1 m/s fra øst" />Flau vind, 1 m/s fra øst</td>
+    </tr>
+    <tr>
+      <td>
+        <abbr title="klokken">kl</abbr> 12–18</td>
+      <td title="Klarvær. Gjelder for: kl 12–18">
+        <figure>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 100 100" width="38" height="38" aria-hidden="true">
+            <use x="0" y="0" width="100" height="100" xlink:href="#s01d" xmlns=""></use>
+            <image alt="Klarvær.  " src="/grafikk/sym/v2017/png/38/01d.png" width="38" height="38" xmlns="" />
+          </svg>
+          <figcaption class="yr-visually-hidden">Klarvær.</figcaption>
+        </figure>
+      </td>
+      <td class="temperature plus" title="Temperatur: 28°.  Følt temperatur 28°.  Gjelder for: kl 12">28°</td>
+      <td title="Nedbør: 0 mm.  Gjelder for: kl 12–18.  ">0 mm</td>
+      <td class="txt-left" title="Flau vind, 1 m/s fra øst.  Gjelder for: kl 12">
+        <img src="/grafikk/sym/vindpiler/32/vindpil.0000.085.png" class="wind" alt="Flau vind, 1 m/s fra øst" />Flau vind, 1 m/s fra øst</td>
+    </tr>
+    <tr>
+      <td>
+        <abbr title="klokken">kl</abbr> 18–24</td>
+      <td title="Lettskyet. Gjelder for: kl 18–24">
+        <figure>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 100 100" width="38" height="38" aria-hidden="true">
+            <use x="0" y="0" width="100" height="100" xlink:href="#s02d" xmlns=""></use>
+            <image alt="Lettskyet.  " src="/grafikk/sym/v2017/png/38/02d.png" width="38" height="38" xmlns="" />
+          </svg>
+          <figcaption class="yr-visually-hidden">Lettskyet.</figcaption>
+        </figure>
+      </td>
+      <td class="temperature plus" title="Temperatur: 27°.  Følt temperatur 27°.  Gjelder for: kl 18">27°</td>
+      <td title="Nedbør: 0 mm.  Gjelder for: kl 18–24.  ">0 mm</td>
+      <td class="txt-left" title="Lett bris, 5 m/s fra vest-sørvest.  Gjelder for: kl 18">
+        <img src="/grafikk/sym/vindpiler/32/vindpil.0050.240.png" class="wind" alt="Lett bris, 5 m/s fra vest-sørvest" />Lett bris, 5 m/s fra vest-sørvest</td>
+    </tr>
+  </tbody>
+</table>
+<table class="yr-table yr-table-overview2 yr-popup-area" summary="">
+  <caption>
+    <strong>I morgen, </strong>mandag 04.06.2018</caption>
+  <colgroup width="60"></colgroup>
+  <colgroup width="50"></colgroup>
+  <colgroup width="50"></colgroup>
+  <colgroup width="80"></colgroup>
+  <colgroup></colgroup>
+  <thead>
+    <tr>
+      <th scope="col">Tid</th>
+      <th scope="col">Varsel</th>
+      <th scope="col">
+        <abbr title="Temperatur">Temp.</abbr>
+      </th>
+      <th scope="col">Nedbør</th>
+      <th scope="col">Vind</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <abbr title="klokken">kl</abbr> 0–6</td>
+      <td title="Delvis skyet. Gjelder for: kl 0–6">
+        <figure>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 100 100" width="38" height="38" aria-hidden="true">
+            <use x="0" y="0" width="100" height="100" xlink:href="#s03n" xmlns=""></use>
+            <image alt="Delvis skyet.  " src="/grafikk/sym/v2017/png/38/03n.png" width="38" height="38" xmlns="" />
+          </svg>
+          <figcaption class="yr-visually-hidden">Delvis skyet.</figcaption>
+        </figure>
+      </td>
+      <td class="temperature plus" title="Temperatur: 22°.  Følt temperatur 22°.  Gjelder for: kl 0">22°</td>
+      <td title="Nedbør: 0 mm.  Gjelder for: kl 0–6.  ">0 mm</td>
+      <td class="txt-left" title="Svak vind, 2 m/s fra sør-sørvest.  Gjelder for: kl 0">
+        <img src="/grafikk/sym/vindpiler/32/vindpil.0025.210.png" class="wind" alt="Svak vind, 2 m/s fra sør-sørvest" />Svak vind, 2 m/s fra sør-sørvest</td>
+    </tr>
+    <tr>
+      <td>
+        <abbr title="klokken">kl</abbr> 6–12</td>
+      <td title="Klarvær. Gjelder for: kl 6–12">
+        <figure>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 100 100" width="38" height="38" aria-hidden="true">
+            <use x="0" y="0" width="100" height="100" xlink:href="#s01d" xmlns=""></use>
+            <image alt="Klarvær.  " src="/grafikk/sym/v2017/png/38/01d.png" width="38" height="38" xmlns="" />
+          </svg>
+          <figcaption class="yr-visually-hidden">Klarvær.</figcaption>
+        </figure>
+      </td>
+      <td class="temperature plus" title="Temperatur: 19°.  Følt temperatur 19°.  Gjelder for: kl 6">19°</td>
+      <td title="Nedbør: 0 mm.  Gjelder for: kl 6–12.  ">0 mm</td>
+      <td class="txt-left" title="Laber bris, 6 m/s fra nord-nordøst.  Gjelder for: kl 6">
+        <img src="/grafikk/sym/vindpiler/32/vindpil.0050.010.png" class="wind" alt="Laber bris, 6 m/s fra nord-nordøst" />Laber bris, 6 m/s fra nord-nordøst</td>
+    </tr>
+    <tr>
+      <td>
+        <abbr title="klokken">kl</abbr> 12–18</td>
+      <td title="Klarvær. Gjelder for: kl 12–18">
+        <figure>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 100 100" width="38" height="38" aria-hidden="true">
+            <use x="0" y="0" width="100" height="100" xlink:href="#s01d" xmlns=""></use>
+            <image alt="Klarvær.  " src="/grafikk/sym/v2017/png/38/01d.png" width="38" height="38" xmlns="" />
+          </svg>
+          <figcaption class="yr-visually-hidden">Klarvær.</figcaption>
+        </figure>
+      </td>
+      <td class="temperature plus" title="Temperatur: 21°.  Følt temperatur 21°.  Gjelder for: kl 12">21°</td>
+      <td title="Nedbør: 0 mm.  Gjelder for: kl 12–18.  ">0 mm</td>
+      <td class="txt-left" title="Lett bris, 5 m/s fra nord.  Gjelder for: kl 12">
+        <img src="/grafikk/sym/vindpiler/32/vindpil.0050.000.png" class="wind" alt="Lett bris, 5 m/s fra nord" />Lett bris, 5 m/s fra nord</td>
+    </tr>
+    <tr>
+      <td>
+        <abbr title="klokken">kl</abbr> 18–24</td>
+      <td title="Klarvær. Gjelder for: kl 18–24">
+        <figure>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 100 100" width="38" height="38" aria-hidden="true">
+            <use x="0" y="0" width="100" height="100" xlink:href="#s01d" xmlns=""></use>
+            <image alt="Klarvær.  " src="/grafikk/sym/v2017/png/38/01d.png" width="38" height="38" xmlns="" />
+          </svg>
+          <figcaption class="yr-visually-hidden">Klarvær.</figcaption>
+        </figure>
+      </td>
+      <td class="temperature plus" title="Temperatur: 21°.  Følt temperatur 21°.  Gjelder for: kl 18">21°</td>
+      <td title="Nedbør: 0 mm.  Gjelder for: kl 18–24.  ">0 mm</td>
+      <td class="txt-left" title="Laber bris, 6 m/s fra nord-nordvest.  Gjelder for: kl 18">
+        <img src="/grafikk/sym/vindpiler/32/vindpil.0050.330.png" class="wind" alt="Laber bris, 6 m/s fra nord-nordvest" />Laber bris, 6 m/s fra nord-nordvest</td>
+    </tr>
+  </tbody>
+</table>
+<table class="yr-table yr-table-overview2 yr-popup-area" summary="">
+  <caption>
+    <strong>Tirsdag, </strong>05.06.2018</caption>
+  <colgroup width="60"></colgroup>
+  <colgroup width="50"></colgroup>
+  <colgroup width="50"></colgroup>
+  <colgroup width="80"></colgroup>
+  <colgroup></colgroup>
+  <thead>
+    <tr>
+      <th scope="col">Tid</th>
+      <th scope="col">Varsel</th>
+      <th scope="col">
+        <abbr title="Temperatur">Temp.</abbr>
+      </th>
+      <th scope="col">Nedbør</th>
+      <th scope="col">Vind</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <abbr title="klokken">kl</abbr> 0–6</td>
+      <td title="Klarvær. Gjelder for: kl 0–6">
+        <figure>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 100 100" width="38" height="38" aria-hidden="true">
+            <use x="0" y="0" width="100" height="100" xlink:href="#s01n" xmlns=""></use>
+            <image alt="Klarvær.  " src="/grafikk/sym/v2017/png/38/01n.png" width="38" height="38" xmlns="" />
+          </svg>
+          <figcaption class="yr-visually-hidden">Klarvær.</figcaption>
+        </figure>
+      </td>
+      <td class="temperature plus" title="Temperatur: 13°.  Følt temperatur 13°.  Gjelder for: kl 0">13°</td>
+      <td title="Nedbør: 0 mm.  Gjelder for: kl 0–6.  ">0 mm</td>
+      <td class="txt-left" title="Svak vind, 3 m/s fra nord.  Gjelder for: kl 0">
+        <img src="/grafikk/sym/vindpiler/32/vindpil.0025.000.png" class="wind" alt="Svak vind, 3 m/s fra nord" />Svak vind, 3 m/s fra nord</td>
+    </tr>
+    <tr>
+      <td>
+        <abbr title="klokken">kl</abbr> 6–12</td>
+      <td title="Lettskyet. Gjelder for: kl 6–12">
+        <figure>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 100 100" width="38" height="38" aria-hidden="true">
+            <use x="0" y="0" width="100" height="100" xlink:href="#s02d" xmlns=""></use>
+            <image alt="Lettskyet.  " src="/grafikk/sym/v2017/png/38/02d.png" width="38" height="38" xmlns="" />
+          </svg>
+          <figcaption class="yr-visually-hidden">Lettskyet.</figcaption>
+        </figure>
+      </td>
+      <td class="temperature plus" title="Temperatur: 10°.  Følt temperatur 10°.  Gjelder for: kl 6">10°</td>
+      <td title="Nedbør: 0 mm.  Gjelder for: kl 6–12.  ">0 mm</td>
+      <td class="txt-left" title="Laber bris, 7 m/s fra nord-nordvest.  Gjelder for: kl 6">
+        <img src="/grafikk/sym/vindpiler/32/vindpil.0075.335.png" class="wind" alt="Laber bris, 7 m/s fra nord-nordvest" />Laber bris, 7 m/s fra nord-nordvest</td>
+    </tr>
+    <tr>
+      <td>
+        <abbr title="klokken">kl</abbr> 12–18</td>
+      <td title="Delvis skyet. Gjelder for: kl 12–18">
+        <figure>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 100 100" width="38" height="38" aria-hidden="true">
+            <use x="0" y="0" width="100" height="100" xlink:href="#s03d" xmlns=""></use>
+            <image alt="Delvis skyet.  " src="/grafikk/sym/v2017/png/38/03d.png" width="38" height="38" xmlns="" />
+          </svg>
+          <figcaption class="yr-visually-hidden">Delvis skyet.</figcaption>
+        </figure>
+      </td>
+      <td class="temperature plus" title="Temperatur: 14°.  Følt temperatur 14°.  Gjelder for: kl 12">14°</td>
+      <td title="Nedbør: 0 mm.  Gjelder for: kl 12–18.  ">0 mm</td>
+      <td class="txt-left" title="Laber bris, 6 m/s fra nord-nordvest.  Gjelder for: kl 12">
+        <img src="/grafikk/sym/vindpiler/32/vindpil.0050.340.png" class="wind" alt="Laber bris, 6 m/s fra nord-nordvest" />Laber bris, 6 m/s fra nord-nordvest</td>
+    </tr>
+    <tr>
+      <td>
+        <abbr title="klokken">kl</abbr> 20–2</td>
+      <td title="Klarvær. Gjelder for: kl 20–2">
+        <figure>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 100 100" width="38" height="38" aria-hidden="true">
+            <use x="0" y="0" width="100" height="100" xlink:href="#s01d" xmlns=""></use>
+            <image alt="Klarvær.  " src="/grafikk/sym/v2017/png/38/01d.png" width="38" height="38" xmlns="" />
+          </svg>
+          <figcaption class="yr-visually-hidden">Klarvær.</figcaption>
+        </figure>
+      </td>
+      <td class="temperature plus" title="Temperatur: 13°.  Følt temperatur 13°.  Gjelder for: kl 20">13°</td>
+      <td title="Nedbør: 0 mm.  Gjelder for: kl 20–2.  ">0 mm</td>
+      <td class="txt-left" title="Lett bris, 5 m/s fra nord-nordøst.  Gjelder for: kl 20">
+        <img src="/grafikk/sym/vindpiler/32/vindpil.0050.020.png" class="wind" alt="Lett bris, 5 m/s fra nord-nordøst" />Lett bris, 5 m/s fra nord-nordøst</td>
+    </tr>
+  </tbody>
+</table>
+        
+
+
+		<p class="clear-both">Værsymbolet gjelder for hele perioden, temperatur- og vindvarselet er for det første tidspunktet. <a href="http://www.yr.no/1.3362862" style="text-decoration: underline; color: #0fa2d8;"><strong>Slik forstår du varslene på Yr</strong></a>.</p>
+
+		<div class="yr-content-stickynav-three-fifths yr-stations left clear">
+			
+            
+		</div>
+        
+
+		
+	</div>
+
+	<div class="yr-content-stickynav-two-fifths right lp_cright">
+		
+		
+        
+		<div class="yr-map yr-point-map">
+			<h2>&nbsp;</h2>
+			<div id="map" class="yr-point-map-wrapper"></div>
+		</div>
+
+		<table class="yr-table yr-table-sunmoon" summary="">
+  <caption>
+    <strong>Sol og måne</strong>, 03.06.2018</caption>
+  <colgroup width="45"></colgroup>
+  <colgroup></colgroup>
+  <colgroup width="45"></colgroup>
+  <colgroup></colgroup>
+  <thead>
+    <tr>
+      <th colspan="2">Sol</th>
+      <th colspan="2">Måne</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">
+        <svg x="0" y="0" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38">;
+  <symbol id="sun"><path class="sun-glow" fill="url(#sun-glow-grad)" d="M66.64,47.86,82,41,66.64,34.12l9.84-13.66L59.76,22.22,61.46,5.47l-13.6,9.89L41,0,34.12,15.36,20.46,5.52l1.76,16.72L5.47,20.54l9.89,13.6L0,41l15.36,6.83L5.52,61.54l16.72-1.76L20.54,76.53l13.6-9.89L41,82l6.83-15.36,13.66,9.84L59.78,59.76l16.75,1.69Z"></path><path class="sun-outer" fill="#ffd348" d="M19.28,53.5a25,25,0,1,0,9.15-34.16A25,25,0,0,0,19.28,53.5Z"></path><path class="sun-inner" fill="url(#sun-inner-grad)" d="M22.74,51.5a21,21,0,1,0,7.69-28.69A21,21,0,0,0,22.74,51.5Z"></path></symbol><defs><radialGradient id="sun-glow-grad" cx="41" cy="41" r="41" gradientUnits="userSpaceOnUse"><stop offset="54%" stop-color="#d6b849" /><stop offset="67%" stop-color="#ffce47" /><stop offset="100%" stop-color="#ffdb73" /></radialGradient><linearGradient id="sun-inner-grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#ffaf22" /><stop offset="100%" stop-color="#f09900" /></linearGradient></defs><symbol id="s01d"><use xlink:href="#sun" x="0" y="0" width="100" height="100" transform="translate(9,9) scale(1,1)"></use></symbol><use xlink:href="#s01d" x="0" y="0" width="100" height="100"></use><image src="/grafikk/sym/v2017/png/38/01d.png" alt="Solsymbol" xmlns="" /></svg>
+      </td>
+      <td class="txt-left">Soloppgang 03:41</td>
+      <td rowspan="2">
+        <svg x="0" y="0" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38">;
+  <symbol id="moon"><path d="M28.43,0A28.44,28.44,0,0,1,32.3,14.32,28.61,28.61,0,0,1,3.69,42.93,28.71,28.71,0,0,1,0,42.66,28.59,28.59,0,1,0,28.43,0Z" fill="url(#moon-grad)"></path></symbol><defs><linearGradient id="moon-grad" x1="0%" y1="50%" x2="100%" y2="0%"><stop offset="0%" stop-color="#686e73" /><stop offset="100%" stop-color="#6a7075" /></linearGradient></defs><symbol id="s01n"><use xlink:href="#moon" x="0" y="0" width="100" height="100" transform="translate(20,20) scale(1,1)"></use></symbol><use xlink:href="#s01n" x="0" y="0" width="100" height="100"></use></svg>
+      </td>
+      <td class="txt-left">Månen står ikke opp.</td>
+    </tr>
+    <tr>
+      <td class="txt-left yr-table-cell-border-left">Solnedgang 21:51</td>
+      <td class="txt-left">Månen ned 08:02</td>
+    </tr>
+  </tbody>
+</table>
+	</div>
+	
+	<div class="clear">
+  <div class="yr-webcams yr-popup-area lp_webcam">
+    <h2>
+      <strong>Nettkamera</strong> i nærheten av Stockholm</h2>
+    <div class="yr-webcam">
+      <a href="https://www.webcams.travel/webcam/1332252961-Weather-Stockholm-Sergels-torg-Stockholm">
+        <img src="https://images.webcams.travel/thumbnail/1332252961.jpg" alt="Stockholm: Sergels torg" />
+      </a>
+      <p>
+        <strong>Stockholm: Sergels torg</strong>, Stockholm<br /><em>Sist oppdatert: kl 09:30</em><br /><em>Avstand: 0,1 km</em><br /><em id="credit" class="yr-webcam-credit">Lagt inn av <a href="https://www.webcams.travel/user/4847">The Last</a>.</em></p>
+    </div>
+    <div class="yr-webcam">
+      <a href="https://www.webcams.travel/webcam/1490713756-stockholm-sheraton-hotel">
+        <img src="https://images.webcams.travel/thumbnail/1490713756.jpg" alt="Stockholm: Sheraton − Hotel" />
+      </a>
+      <p>
+        <strong>Stockholm: Sheraton − Hotel</strong>, Stockholm<br /><em>Sist oppdatert: kl 09:40</em><br /><em>Avstand: 0,4 km</em><br /><em id="credit" class="yr-webcam-credit">Lagt inn av <a href="https://www.webcams.travel/user/179914">sheratonstockholm.com</a>.</em></p>
+    </div>
+    <div class="yr-webcam">
+      <a href="https://www.webcams.travel/webcam/1332253124-Weather-Stureplan-Stockholm">
+        <img src="https://images.webcams.travel/thumbnail/1332253124.jpg" alt="Stockholm: Stureplan" />
+      </a>
+      <p>
+        <strong>Stockholm: Stureplan</strong>, Stockholm<br /><em>Sist oppdatert: kl 09:25</em><br /><em>Avstand: 0,6 km</em><br /><em id="credit" class="yr-webcam-credit">Lagt inn av <a href="https://www.webcams.travel/user/115861">alejandrokm</a>.</em></p>
+    </div>
+    <div class="yr-webcam">
+      <a href="https://www.webcams.travel/webcam/1511213367-stockholm-radisson-blu-waterfront-hotel">
+        <img src="https://images.webcams.travel/thumbnail/1511213367.jpg" alt="Stockholm: Radisson Blu Waterfront Hotel" />
+      </a>
+      <p>
+        <strong>Stockholm: Radisson Blu Waterfront Hotel</strong>, Stockholm<br /><em>Sist oppdatert: kl 09:24</em><br /><em>Avstand: 0,7 km</em><br /><em id="credit" class="yr-webcam-credit">Lagt inn av <a href="https://www.webcams.travel/user/193585">radissonblu.com</a>.</em></p>
+    </div>
+    <div class="yr-webcam-info">Har du et nettkamera? <a href=" http://om.yr.no/info/nettkamera/">Legg det til på Yr</a><br /><p>Nettkamera er hentet fra <a href="//www.webcams.travel/">webcams.travel</a></p></div>
+  </div>
+</div>
+	
+
+	
+		<div class="yr-horizontal-space clear lp_info">
+			
+			
+<div class="yr-pointinfo clearfix">
+	<div class="yr-content-stickynav-two-fifths left">
+		<p>
+			<strong>
+				Bredde-/lengdegrad:</strong>
+			<span>59°19′57″N</span><span>18°03′53″Ø</span><br />
+			<strong>
+				Desimalkoordinater:</strong>
+			59,3326 18,0649<br />
+		</p>
+		
+		<p>
+			<strong>
+				Høyde over havet: </strong>28 moh.<br />
+		</p>
+		
+		<p>
+			Se stedet på: 
+			<a class="yr-icon yr-icon-map-pin" href="http://maps.google.no/maps?ie=UTF8&hl=no&z=14&ll=59.33258,18.0649&q=59.33258,18.0649(Stockholm)">
+				Google Kart
+			</a>
+		</p>
+        <p>
+			<strong>
+				<a class="yr-icon yr-icon-weather-data" href="data.html">
+
+					Gratis værdata
+				</a>
+			</strong>
+			(Javascript- eller XML-varsel)
+		</p>
+	</div>
+	<div class="yr-content-stickynav-three-fifths right">
+		<strong>Informasjon om stedsnavnet</strong>
+		<div>
+			<p>Internasjonale stedsnavn på Yr er hentet fra databasen <a href="http://www.geonames.org/">Geonames</a>.</p>
+				
+				<p><strong>Nordiske språk:</strong> <em>Stockholbma</em> (nordsamisk), <em>Stockholm</em> (dansk, norsk, svensk), <em>Tukholma</em> (finsk), <em>Stokkhólmur</em> (islandsk). </p>
+				<p><strong>Andre språk:</strong> <em>Stockholm</em> (tysk, engelsk, fransk), <em>Estocolmo</em> (spansk), <em>ستوكهولم</em> (arabisk), <em>استکهلم</em> (persisk), <em>ストックホルム</em> (japansk), <em>Holmia</em> (latin), <em>Стокгольм</em> (russisk), <em>سٹاکہوم</em> (urdu), <em>स्टॉकहोम</em> (hindi). </p>
+				
+				<strong>Kategori: </strong>Hovedstad<br />
+				<strong>Region: </strong>Stockholm, Sverige.<br />
+				<strong>Tidssone: </strong>Europe/Stockholm.<br />
+				<strong>Innbyggertall: </strong>1253309<br />
+				<strong>Geonames-ID: </strong><a href="http://www.geonames.org/2673730">2673730</a>
+		</div>
+	</div>
+</div>
+
+			
+		</div>
+	</div>
+	
+
+			</div>
+		</div>
+		<div class="yr-footer lp_footer" id="menu">
+			<div id="ctl00_ctl00_newsFooter" class="yr-newsfooter clearfix lp_newsfooter">
+				<h2>
+					<strong>Nyheter</strong> fra Yr</h2>
+				<div class="yr-newsfooter-body">
+					
+					<ul>
+  <li>
+    <div class="news-teasers">
+      <a href="https://www.yr.no/artikkel/varmeste-mai-maned-i-moderne-tid-1.14064858" title="">
+        <img width="225" height="127" style="width:225px;height:127px;" src="https://gfx.nrk.no/m_KohGFSEMyYSaBHlvcJxg2TQjsUqqv_lD0oH9mmub6Q" alt="HET MAI: Denne gjengen sørget for å nyte de varmeste dagene i mai måned i Nygårdsparken i Bergen. " />
+      </a>
+      <h3>
+        <a href="https://www.yr.no/artikkel/varmeste-mai-maned-i-moderne-tid-1.14064858" title="Varmeste mai måned i moderne tid">Varmeste mai måned i moderne tid</a>
+      </h3>
+      <strong>
+        <a href="https://www.yr.no/artikkel/varmeste-mai-maned-i-moderne-tid-1.14064858" title="">Les mer</a>
+      </strong>
+    </div>
+  </li>
+  <li>
+    <div class="news-teasers">
+      <a href="https://www.nrk.no/trondelag/styrtregn-lagde-kaos-pa-e6-1.14064317" title="">
+        <img width="225" height="127" style="width:225px;height:127px;" src="https://gfx.nrk.no/KuZUpJ0amLMUK-OlYermdgYFASeLxLu_vnTcrXtoPMPw" alt="" />
+      </a>
+      <h3>
+        <a href="https://www.nrk.no/trondelag/styrtregn-lagde-kaos-pa-e6-1.14064317" title="Hagl og styrtregn rammet Trøndelag - E6 er i ferd med å kollapse">Hagl og styrtregn rammet Trøndelag - E6 er i ferd med å kollapse</a>
+      </h3>
+      <strong>
+        <a href="https://www.nrk.no/trondelag/styrtregn-lagde-kaos-pa-e6-1.14064317" title="">Les mer</a>
+      </strong>
+    </div>
+  </li>
+  <li>
+    <div class="news-teasers">
+      <a href="https://www.nrk.no/trondelag/styrtregn-lagde-kaos-pa-e6-1.14064317" title="">
+        <img width="225" height="127" style="width:225px;height:127px;" src="https://gfx.nrk.no/9uSaiRurBiYR0BiXjx-E8Q3WXb7btae8yhx9S8L1FHJA" alt="" />
+      </a>
+      <h3>
+        <a href="https://www.nrk.no/trondelag/styrtregn-lagde-kaos-pa-e6-1.14064317" title="Hagl og styrtregn rammet Trøndelag - E6 er i ferd med å kollapse ">Hagl og styrtregn rammet Trøndelag - E6 er i ferd med å kollapse </a>
+      </h3>
+      <strong>
+        <a href="https://www.nrk.no/trondelag/styrtregn-lagde-kaos-pa-e6-1.14064317" title="">Les mer</a>
+      </strong>
+    </div>
+  </li>
+  <li>
+    <div class="news-teasers">
+      <a href="https://www.yr.no/artikkel/arets-forste-tropenatt-er-et-faktum-1.14062758" title="">
+        <img width="225" height="127" style="width:225px;height:127px;" src="https://gfx.nrk.no/oXT1hAn1oBj1WsyGKxJr6wUM9lCccP65jQl24nkdWN_Q" alt="HETE NETTER: Sommervarmen gjør at også nettene blir langt varmere enn normalt for årstiden. Ola Ødegaard tok dette flotte bildet på Jeløya i Ytre Oslofjord tidligere denne uken. " />
+      </a>
+      <h3>
+        <a href="https://www.yr.no/artikkel/arets-forste-tropenatt-er-et-faktum-1.14062758" title="Årets første tropenatt er et faktum">Årets første tropenatt er et faktum</a>
+      </h3>
+      <strong>
+        <a href="https://www.yr.no/artikkel/arets-forste-tropenatt-er-et-faktum-1.14062758" title="">Les mer</a>
+      </strong>
+    </div>
+  </li>
+</ul>
+				</div>
+			</div>
+			<div class="yr-navigation">
+  <div class="yr-navigation-tabs clearfix lp_nav">
+    <ul class="clearfix">
+      <li>
+        <a title="Norge og verden" href="#t1" class="yr-icon yr-icon-places">Norge og verden</a>
+      </li>
+      <li>
+        <a title="Aktuelle varsel" href="#t2" class="yr-icon yr-icon-other-services">Aktuelle varsel</a>
+      </li>
+      <li>
+        <a title="Været nå" href="#t3" class="yr-icon yr-icon-weather-now">Været nå</a>
+      </li>
+      <li>
+        <a title="Været som var" href="#t4" class="yr-icon yr-icon-climate">Været som var</a>
+      </li>
+      <li>
+        <a title="Lær om vær" href="#t5" class="yr-icon yr-icon-learn-about-weather">Lær om vær</a>
+      </li>
+      <li>
+        <a title="Gratis værdata" href="#t6" class="yr-icon yr-icon-weather-data">Gratis værdata</a>
+      </li>
+    </ul>
+  </div>
+  <div class="yr-navigation-body clearfix">
+    <div id="t1" style="display: block;">
+      <div class="yr-nav-norway left">
+        <h4>Norge</h4>
+        <div class="yr-nav-col">
+          <dl>
+            <dt>Nord-Norge</dt>
+            <dd>
+              <a title="Finnmark" href="http://www.yr.no/sted/Norge/Finnmark/">Finnmark</a>
+            </dd>
+            <dd>
+              <a title="Nordland" href="http://www.yr.no/sted/Norge/Nordland/">Nordland</a>
+            </dd>
+            <dd>
+              <a title="Troms" href="http://www.yr.no/sted/Norge/Troms/">Troms</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt>Trøndelag</dt>
+            <dd>
+              <a title="Trøndelag" href="http://www.yr.no/sted/Norge/Trøndelag/">Trøndelag</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt>Vestlandet</dt>
+            <dd>
+              <a title="Hordaland" href="http://www.yr.no/sted/Norge/Hordaland/">Hordaland</a>
+            </dd>
+            <dd>
+              <a title="Møre og Romsdal" href="http://www.yr.no/sted/Norge/Møre_og_Romsdal/">Møre og Romsdal</a>
+            </dd>
+            <dd>
+              <a title="Rogaland" href="http://www.yr.no/sted/Norge/Rogaland/">Rogaland</a>
+            </dd>
+            <dd>
+              <a title="Sogn og Fjordane" href="http://www.yr.no/sted/Norge/Sogn_og_Fjordane/">Sogn og Fjordane</a>
+            </dd>
+          </dl>
+        </div>
+        <div class="yr-nav-col">
+          <dl>
+            <dt>Østlandet</dt>
+            <dd>
+              <a title="Akershus" href="http://www.yr.no/sted/Norge/Akershus/">Akershus</a>
+            </dd>
+            <dd>
+              <a title="Buskerud" href="http://www.yr.no/sted/Norge/Buskerud/">Buskerud</a>
+            </dd>
+            <dd>
+              <a title="Hedmark" href="http://www.yr.no/sted/Norge/Hedmark/">Hedmark</a>
+            </dd>
+            <dd>
+              <a title="Oppland" href="http://www.yr.no/sted/Norge/Oppland/">Oppland</a>
+            </dd>
+            <dd>
+              <a title="Oslo" href="http://www.yr.no/sted/Norge/Oslo/">Oslo</a>
+            </dd>
+            <dd>
+              <a title="Telemark" href="http://www.yr.no/sted/Norge/Telemark/">Telemark</a>
+            </dd>
+            <dd>
+              <a title="Vestfold" href="http://www.yr.no/sted/Norge/Vestfold/">Vestfold</a>
+            </dd>
+            <dd>
+              <a title="Østfold" href="http://www.yr.no/sted/Norge/Østfold/">Østfold</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt>Sørlandet</dt>
+            <dd>
+              <a title="Aust-Agder" href="http://www.yr.no/sted/Norge/Aust-Agder/">Aust-Agder</a>
+            </dd>
+            <dd>
+              <a title="Vest-Agder" href="http://www.yr.no/sted/Norge/Vest-Agder/">Vest-Agder</a>
+            </dd>
+          </dl>
+        </div>
+        <div class="yr-nav-col">
+          <dl>
+            <dt>Polarområdene</dt>
+            <dd>
+              <a title="Svalbard" href="http://www.yr.no/sted/Norge/Svalbard/">Svalbard</a>
+            </dd>
+            <dd>
+              <a title="Jan Mayen" href="http://www.yr.no/sted/Norge/Jan_Mayen/">Jan Mayen</a>
+            </dd>
+            <dd>
+              <a title="Bouvetøya" href="http://www.yr.no/sted/Bouvetøya/">Bouvetøya</a>
+            </dd>
+            <dd>
+              <a title="Troll (Antarktis)" href="http://www.yr.no/sted/Antarktika/Annet/Troll/">Troll (Antarktis)</a>
+            </dd>
+            <dd>
+              <a title="Peter I Øy" href="http://www.yr.no/sted/Antarktika/Annet/Peter_I_Øy/">Peter I Øy</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt>Hav og olje</dt>
+            <dd>
+              <a title="Hav og kyst" href="http://www.yr.no/hav_og_kyst/">Hav og kyst</a>
+            </dd>
+            <dd>
+              <a title="Fiskebankene" href="http://www.yr.no/hav_og_kyst/kart_over_fiskebankene/">Fiskebankene</a>
+            </dd>
+            <dd>
+              <a title="Oljeplattformene" href="http://www.yr.no/sted/Oljeplattformene/">Oljeplattformene</a>
+            </dd>
+            <dd>
+              <a title="Småbåtvarsel" href="http://www.yr.no/hav_og_kyst/tekstvarsel/smabat/">Småbåtvarsel</a>
+            </dd>
+          </dl>
+        </div>
+      </div>
+      <div class="yr-nav-world right">
+        <h4>Verden</h4>
+        <div class="yr-nav-col">
+          <ul>
+            <li>
+              <a title="Norden" href="http://www.yr.no/sted/Norden/">Norden</a>
+            </li>
+            <li>
+              <a title="Europa" href="http://www.yr.no/sted/Europa/">Europa</a>
+            </li>
+            <li>
+              <a title="Asia" href="http://www.yr.no/sted/Asia">Asia</a>
+            </li>
+            <li>
+              <a title="Afrika" href="http://www.yr.no/sted/Afrika">Afrika</a>
+            </li>
+            <li>
+              <a title="Nord- og Mellom-Amerika" href="http://www.yr.no/sted/Nord-_og_Mellom-Amerika/">Nord- og Mellom-Amerika</a>
+            </li>
+            <li>
+              <a title="Sør-Amerika" href="http://www.yr.no/sted/Sør-Amerika/">Sør-Amerika</a>
+            </li>
+            <li>
+              <a title="Oseania" href="http://www.yr.no/sted/Oseania/">Oseania</a>
+            </li>
+            <li>
+              <a title="Antarktis" href="http://www.yr.no/sted/Antarktis/">Antarktis</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="t2" style="display: block;">
+      <div class="yr-nav-forecast">
+        <div class="yr-nav-col">
+          <ul>
+            <li>
+              <a title="Tekstvarsel" href="http://www.yr.no/tekstvarsel/">Tekstvarsel</a>
+            </li>
+            <li>
+              <a title="Hav og kyst" href="http://www.yr.no/hav_og_kyst/">Hav og kyst</a>
+            </li>
+            <li>
+              <a title="UV-varsel" href="http://www.yr.no/uv-varsel/">UV-varsel</a>
+            </li>
+            <li>
+              <a title="Meteorologens værkart" href="http://www.yr.no/verkart/">Meteorologens værkart</a>
+            </li>
+            <li>
+              <a title="Fjelloverganger" href="http://www.yr.no/spesialvarsel/1.5152429">Fjelloverganger</a>
+            </li>
+          </ul>
+        </div>
+        <div class="yr-nav-col">
+          <h4>Vinter</h4>
+          <ul>
+            <li>
+              <a title="Skiførekart" href="http://m.senorge.no/appmap.htm?p=snow">Skiførekart</a>
+            </li>
+            <li>
+              <a title="Snødybder" href="http://www.yr.no/observasjonar/sn%C3%B8lista.html">Snødybder</a>
+            </li>
+            <li>
+              <a title="Alpinanlegg" href="http://www.yr.no/sted/Norske_alpinanlegg/">Alpinanlegg</a>
+            </li>
+          </ul>
+        </div>
+        <div class="yr-nav-col">
+          <h4>Sommer</h4>
+          <ul>
+            <li>
+              <a title="Pollenvarsel" href="http://www.yr.no/pollen/">Pollenvarsel</a>
+            </li>
+            <li>
+              <a title="Skogbrannfare" href="http://www.yr.no/spesialvarsel/skogbrannfare.html">Skogbrannfare</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="t3" style="display: block;">
+      <div class="yr-nav-weather-now">
+        <div class="left">
+          <div class="yr-nav-col">
+            <ul>
+              <li>
+                <a title="Nedbør nå" href="http://www.yr.no/radar/">Nedbør nå</a>
+              </li>
+              <li>
+                <a title="Skydekke nå" href="http://www.yr.no/satellitt/">Skydekke nå</a>
+              </li>
+              <li>
+                <a title="Siste observasjoner" href="http://www.yr.no/observasjonar/">Siste observasjoner</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="t4" style="display: block;">
+      <div class="yr-nav-weather-history">
+        <div class="left">
+          <div class="yr-nav-col">
+            <ul>
+              <li>
+                <a title="Ferieværet" href="http://www.yr.no/ferie/">Ferieværet</a>
+              </li>
+              <li>
+                <a title="Varmest, kaldest og våtest" href="http://www.yr.no/observasjonar/statistikk.html">Varmest, kaldest og våtest</a>
+              </li>
+              <li>
+                <a title="Målestasjoner" href="http://www.yr.no/observasjonar/">Målestasjoner</a>
+              </li>
+              <li>
+                <a title="Klimautviklingen siste 150 år" href="http://www.yr.no/klima/">Klimautviklingen siste 150 år</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="t5" style="display: block;">
+      <div class="yr-nav-learn">
+        <div class="left">
+          <div class="yr-nav-col">
+            <ul>
+              <li>
+                <a title="Spør Meteorologen" href="http://www.yr.no/nyheter/1.7017291">Spør Meteorologen</a>
+              </li>
+              <li>
+                <a title="Meteorologileksikon" href="http://metlex.met.no/wiki/Hovedside">Meteorologileksikon</a>
+              </li>
+              <li>
+                <a title="Slik forstår du varslene" href="http://om.yr.no/forklaring/forsta-varslene/">Slik forstår du varslene</a>
+              </li>
+              <li>
+                <a title="Slik forstår du symbolene" href="http://om.yr.no/forklaring/symbol/">Slik forstår du symbolene</a>
+              </li>
+              <li>
+                <a title="Hjelp" href="http://om.yr.no/sporsmal/kontakt-yr-no/">Hjelp</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="t6" style="display: block;">
+      <div class="yr-nav-data lp_data">
+        <div class="yr-nav-data-intro">
+          <p>Du kan få svært mye av innholdet på Yr gratis, til bruk i ulike applikasjoner og tjenester.</p>
+          <p>Dersom du utvikler program, nettjenester eller annet med data frå Yr, oppfordrer vi deg til å <a href="http://tillegg.yr.no/">dele det du har laget med andre</a>!</p>
+        </div>
+        <div class="yr-nav-col"></div>
+        <div class="yr-nav-col">
+          <h4>Info og retningsliner</h4>
+          <ul>
+            <li>
+              <a href="http://om.yr.no/verdata/">Lag dine egne tjenester</a>
+            </li>
+            <li>
+              <a href="http://om.yr.no/verdata/vilkar/">Vilkår for bruk av innhold</a>
+            </li>
+            <li>
+              <a href="http://om.yr.no/verdata/hvorfor/">Hvorfor gratis værdata?</a>
+            </li>
+          </ul>
+        </div>
+        <div class="yr-nav-col">
+          <h4>Datakilder</h4>
+          <ul>
+            <li>
+              <a href="http://om.yr.no/verdata/xml/">Værvarsel i XML-format</a>
+            </li>
+            <li>
+              <a href="http://om.yr.no/verdata/grib/">Værvarsel i GRIB-format</a>
+            </li>
+            <li>
+              <a href="http://om.yr.no/verdata/klimadata/">Observasjoner og klimastatistikk i XML-format</a>
+            </li>
+          </ul>
+        </div>
+        <div class="yr-nav-col">
+          <h4>Ferdige løsninger</h4>
+          <ul>
+            <li>
+              <a href="http://om.yr.no/verdata/javascript/">Javascript-varsel</a>
+            </li>
+            <li>
+              <a href="http://om.yr.no/verdata/php/">Værvarsel i PHP-format</a>
+            </li>
+            <li>
+              <a href="http://tillegg.yr.no/applikasjoner">tillegg.yr.no</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+			
+<div class="colophon clearfix lp_colophon">
+	<div class="rows">
+		<a href="http://nrk.no" title="Gå til NRK sitt nettsted"><img height="20" alt="Logo for NRK"  src="/grafikk/nrk.png" /></a>
+		<a href="http://met.no" title="Gå til Meteorologisk Institutt sitt nettsted"><img height="30" alt="Logo for Meteorologisk Institutt" src="/grafikk/met.png" /></a>
+	</div>
+	<div class="rows">
+		<ul>
+			<li><a href="https://yrkundesenter.zendesk.com/hc/no/articles/360001946034-Send-oss-en-henvendelse">Kontakt oss</a></li>
+			<li><a href="https://yrkundesenter.zendesk.com/hc/no/articles/206550539-Fakta-om-Yr">Om Yr</a></li>
+			<li><a href="http://www.nrk.no/retningslinjer/informasjonskapsler-_cookies_-1.11109868">Om informasjonskapsler (cookies)</a></li>
+            <li><a href="https://www.nrk.no/retningslinjer/personvern-i-nrk-1.7765898">Personvern</a></li>
+            <li><a href="https://yrkundesenter.zendesk.com/hc/no/articles/206550249-Samarbeidspartnere">Samarbeidspartnere og kilder</a></li>
+		</ul>
+	</div>
+	<div class="rows">
+		<ul>
+			<li><a href="https://nb-no.facebook.com/Yr-22652235447/">Yr på Facebook</a></li>
+			<li><a href="https://twitter.com/meteorologene">Yr på Twitter</a></li>
+			<li><a href="https://www.instagram.com/yrbilder/?hl=nb">Yr på Instagram</a></li>
+		</ul>
+	</div>
+	<div class="rows">
+		<ul>
+			<li><a href="https://itunes.apple.com/us/app/yr.no/id490989206?mt=8">App for iOS</a></li>
+			<li><a href="https://play.google.com/store/apps/details?id=no.nrk.yr">App for Android</a></li>
+		</ul>
+	</div>
+	<div class="samarbeid">
+		Yr er et samarbeid mellom NRK og Meteorologisk institutt.<br />
+		Redaktør: Ingrid Støver Jensen. Ansvarlig redaktør: Thor Gjermund Eriksen. Meteorologisk ansvarlig: Roar Skålin.<br />
+		<span>Opphavsrett &copy; NRK og Meteorologisk institutt 2007 - 2018</span>
+	</div>
+</div>
+
+		</div>
+	</div>
+
+	
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.3.min.js"></script>
+	<script> window.jQuery || document.write('<script src="/Scripts/jquery-1.12.3.min.js">\x3C/script>');</script>
+	<script src="/Scripts/yr.min.versjonert.wJbL625bqLFgZUQ5vGAK01F9cfg.js"></script>
+	<script>yr.kontekst={"spraak":{"kode":"nob","desimalskille":","},"approt":""};</script>
+	<script src="/Scripts/yr.bruker.historikk.min.versjonert.QhGpMacI62Bp1gPdDoSVi78anyY.js"></script>
+	
+	
+
+<script>
+	jQuery(function ($) {
+		yr.kontekst.node = {
+			erPunkt: true,
+			id: "PunktUtlandet:2673730"
+		};
+		var ps = new yr.bruker.historikk.visning.Punktside();
+
+		//facebook cache buster
+		var fblink = $('.yr-share-facebook');
+		fblink.on('click', function() {
+			var url = $(this).parent().attr('href');
+			var ogurl = $("meta[property='og:url']").attr('content');
+			$.post('https://graph.facebook.com',
+				{
+					id: ogurl,
+					scrape: true
+				})
+				.always(function () { window.location.href = url;});
+			return false;
+		});
+	});
+
+	$(".warning-notification__toggle").click(function (event) {
+		var notificationClicked = $(event.target).parent();
+		var toggleButtonImage = notificationClicked.find(".icon-toggle img")[0];
+		if (toggleButtonImage.src.indexOf("icon-down.png") > 0) {
+			notificationClicked.find(".icon-toggle img")[0].src = "https://www.yr.no/assets/images/100/icon-up.png";
+			notificationClicked.find(".icon-toggle").attr("alt", "Skjul varsel");
+        }
+		else {
+			notificationClicked.find(".icon-toggle img")[0].src = "https://www.yr.no/assets/images/100/icon-down.png";
+			notificationClicked.find(".icon-toggle").attr("alt", "Vis meteorologens tekstvarsel");
+        }
+		notificationClicked.toggleClass("expanded");
+    });
+  
+</script>
+	
+    <script>
+        yr.mapContext = [{"lang":"nob","timezone":"Europe/Stockholm","timezoneName":"Sverige","dom":"map","zoom":6,"activeLayer":"nedbør","staticMap":true,"mode":"Point","globalID":"PunktUtlandet:2673730","timeSliderType":0,"metWmsServer":"https://public-wms.met.no/verportal/verportal.map","lat":59.33258,"lon":18.0649,"projections":{"3575":{"name":"Nord-Europa","timeSliderType":0,"layers":[{"id":"precipitation_1h_regional","basemap":"BASEMAP","singleTile":false}],"options":{"numZoomLevels":9}}}}];
+        yr.kontekst={"spraak":{"kode":"nob","desimalskille":","},"approt":""};
+    </script>
+    
+<script src="/Scripts/OpenLayers-2.13.1/OpenLayers.versjonert.Ulxy8mi6VtIwvn4Nj_1vWnfQN7M.js" ></script>
+<script src="/Scripts/yr.map.versjonert.DLNcv8BwvKNu0a50ScdxJrDnEH4.js"></script>
+<script>YrText.addText({"nob":{"":{"i morgon":"I morgen","i dag":"I dag","kl":"kl","været":"Været"},"kart":{"start animasjon":"Klikk for å starte animasjon","stopp animasjon":"Klikk for å stoppe animasjon","tidslinje dra":"Klikk og dra for å se et annet tidspunkt","zoom inn":"Zoom inn","zoom ut":"Zoom ut"},"punkt/stadnamninfo":{"tidssone":"Tidssone"}}});</script>
+
+
+	
+<div class="stats">
+	<script>
+		unispring.c({
+			"s": "nrk",
+			"cp": "nrk/yr",
+			"url": document.location.href
+		});
+	</script>
+	<script data-comscore-section="nrk/yr" src="https://static.nrk.no/comscore/latest/comscore.min.js" async></script>
+	<noscript>
+		<div>
+			<img src="https://nrk.tns-cs.net/j0=,,,;+,cp=nrk/yr+url=yr.no/tre/trePunkt.aspx;;;" alt="" />
+			<img src="https://sb.scorecardresearch.com/p?oce_section=nrk/yr&amp;c7=yr.no/tre/trePunkt.aspx&amp;cv=2.0&amp;cj=1&amp;c1=2&amp;c2=23674236" style="display:none">
+		</div>
+	</noscript>
+</div>
+	
+</body>
+<!--MADMZYRWWW08 03.06.2018 10:05:31 109,4 ms-->
+<!-- YR Weather Forecast -->
+</html>
